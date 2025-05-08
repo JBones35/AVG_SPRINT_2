@@ -1,15 +1,17 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { RabbitSubscribe, Nack } from '@golevelup/nestjs-rabbitmq';
-import { Injectable, Logger } from '@nestjs/common';
-import { CrmOrderDto } from '../entity/CrmOrderDTO';
+import { Controller, Logger } from '@nestjs/common';
+import { BestellungDataSchuhmacher } from '../entity/CrmOrderDTO';
 import { Bestellhistorie } from '../entity/Bestellhistorie';
 import { MockSchuhmacherRepository } from '../repository/MockSchuhmacherRepository';
 import { Kunde } from '../entity/Kunde';
+import { Ctx, Payload, RmqContext } from '@nestjs/microservices';
 
 /**
  * Ein Listener-Service, der auf Nachrichten aus einem E-Commerce-System lauscht,
  * die über RabbitMQ empfangen werden. Er verarbeitet Aktualisierungen von CRM-Bestelldaten.
  */
-@Injectable()
+@Controller()
 export class ECommerceListener {
   /**
    * Eine schreibgeschützte Logger-Instanz für diese Klasse, um Ereignisse und Fehler zu protokollieren.
@@ -35,7 +37,7 @@ export class ECommerceListener {
    * Sie validiert die Nachricht, legt bei Bedarf neue Kunden oder Bestellungen an
    * und aktualisiert bestehende Bestellungen.
    *
-   * @param dto - Das {@link CrmOrderDto} Datenübertragungsobjekt, das die Bestelldaten enthält.
+   * @param dto - Das {@link BestellungDataSchuhmacher} Datenübertragungsobjekt, das die Bestelldaten enthält.
    * Kann `null` oder `undefined` sein, wenn die Nachricht fehlerhaft ist.
    * @returns `void` bei erfolgreicher Verarbeitung oder ein {@link Nack}-Objekt,
    * um die Nachricht abzulehnen (und optional erneut zustellen zu lassen), falls ein Fehler auftritt
@@ -58,7 +60,10 @@ export class ECommerceListener {
       durable: false,
     },
   })
-  public handleCRMUpdate(dto: CrmOrderDto | null | undefined): void | Nack {
+  public handleCRMUpdate(
+    @Payload() dto: BestellungDataSchuhmacher | null | undefined,
+    @Ctx() context: RmqContext,
+  ): void | Nack {
     if (
       !dto ||
       typeof dto !== 'object' ||
@@ -186,16 +191,16 @@ export class ECommerceListener {
   }
 
   /**
-   * Mappt den Statusstring aus dem {@link CrmOrderDto} auf einen numerischen Status
+   * Mappt den Statusstring aus dem {@link BestellungDataSchuhmacher} auf einen numerischen Status
    * des {@link Bestellhistorie}-Objekts.
    * Wirft einen Fehler, wenn der Status unbekannt, `null`, `undefined` oder leer ist.
    *
-   * @param dto - Das {@link CrmOrderDto}, das den zu mappenden Status enthält.
+   * @param dto - Das {@link BestellungDataSchuhmacher}, das den zu mappenden Status enthält.
    * @param bestellung - Das {@link Bestellhistorie}-Objekt, dessen Status aktualisiert wird.
    * @throws {@link Error} - Wenn der DTO-Status ungültig oder nicht mapbar ist.
    */
   private mapDTOStatusToBestellungStatus(
-    dto: CrmOrderDto,
+    dto: BestellungDataSchuhmacher,
     bestellung: Bestellhistorie,
   ): void {
     switch (dto.status.toUpperCase()) {

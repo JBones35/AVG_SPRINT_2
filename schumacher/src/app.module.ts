@@ -83,6 +83,16 @@ import { ECommerceListener } from './schumacher/service/ECommerceListener';
                */
               type: 'fanout',
             },
+            {
+              /**
+               * Der Name des Exchanges. Verwendet den Wert von `crm.direct.exchange`.
+               */
+              name: 'crm.direct.exchange',
+              /**
+               * Der Typ des Exchanges. 'direct' leitet Nachrichten an alle gebundenen Queues weiter.
+               */
+              type: 'direct',
+            },
           ],
           /**
            * Die vollständige Verbindungs-URI für RabbitMQ.

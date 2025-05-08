@@ -6,7 +6,7 @@ import { Type } from 'class-transformer';
  * Dient zur Validierung und Strukturierung von Bestelldaten, die
  * beispielsweise von externen Systemen empfangen werden.
  */
-export class CrmOrderDto {
+export class BestellungDataSchuhmacher {
   /**
    * Die eindeutige Identifikationsnummer der Bestellung.
    * Muss ein String sein und darf nicht leer sein.

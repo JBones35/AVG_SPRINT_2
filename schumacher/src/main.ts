@@ -2,7 +2,6 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { RabbitMQLogger } from './logger';
 import { ValidationPipe } from '@nestjs/common';
-import { Transport, RmqOptions } from '@nestjs/microservices';
 
 /**
  * Startet den NestJS Microservice für die Verarbeitung von RabbitMQ-Nachrichten.
@@ -18,25 +17,12 @@ async function bootstrap() {
    * Die Konfiguration beinhaltet die URL des RabbitMQ-Servers, den Namen der Queue,
    * Optionen für die Queue (z.B. Persistenz) und das Bestätigungsverhalten (noAck).
    */
-  const app = await NestFactory.createMicroservice<RmqOptions>(AppModule, {
-    transport: Transport.RMQ,
-    options: {
-      urls: ['amqp://guest:guest@localhost:5672'],
-      queue: 'crm.updates.queue',
-      routingKey: 'crm.updates.routingkey',
-      exchange: 'crm.direct.exchange',
-      exchangeType: 'direct',
-      queueOptions: {
-        durable: false,
-      },
-      noAck: true,
-    },
-  });
+  const app = await NestFactory.create(AppModule);
 
   app.useLogger(app.get(RabbitMQLogger));
   app.useGlobalPipes(new ValidationPipe({ transform: true }));
 
-  await app.listen();
+  await app.listen(3000);
   console.log('Microservice lauscht auf RabbitMQ Queue: crm.updates.queue');
 }
 
