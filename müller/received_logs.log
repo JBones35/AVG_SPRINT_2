@@ -4193,3 +4193,1737 @@ java.lang.IllegalArgumentException: No enum constant kirschner.flaig.mozart.enti
 2025-05-07 17:36:05.343 | RK:  | [MOZART] 2025-05-07 17:36:05 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-10T17:36:05.325442200, lieferstatus=PROCESSING}...
 
 2025-05-07 17:36:05.349 | RK:  | "[SCHUHMACHER] 2025-05-07 17:36:05 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 11:37:45.862 | RK:  | [MOZART] 2025-05-08 11:36:08 INFO  HV000001: Hibernate Validator 8.0.1.Final
+
+2025-05-08 11:37:45.864 | RK:  | [MOZART] 2025-05-08 11:36:08 INFO  Starting MozartApplication using Java 24.0.1 with PID 19824 (C:\Users\jonas\sprint_2\mozart\target\classes started by jonas in C:\Users\jonas\sprint_2\mozart)
+
+2025-05-08 11:37:45.864 | RK:  | [MOZART] 2025-05-08 11:36:08 INFO  No active profile set, falling back to 1 default profile: "default"
+
+2025-05-08 11:37:45.865 | RK:  | [MOZART] 2025-05-08 11:36:09 INFO  Tomcat initialized with port 8089 (http)
+
+2025-05-08 11:37:45.866 | RK:  | [MOZART] 2025-05-08 11:36:09 INFO  Initializing ProtocolHandler ["http-nio-8089"]
+
+2025-05-08 11:37:45.867 | RK:  | [MOZART] 2025-05-08 11:36:09 INFO  Starting service [Tomcat]
+
+2025-05-08 11:37:45.867 | RK:  | [MOZART] 2025-05-08 11:36:09 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+
+2025-05-08 11:37:45.867 | RK:  | [MOZART] 2025-05-08 11:36:09 INFO  Initializing Spring embedded WebApplicationContext
+
+2025-05-08 11:37:45.867 | RK:  | [MOZART] 2025-05-08 11:36:09 INFO  Root WebApplicationContext: initialization completed in 1131 ms
+
+2025-05-08 11:37:45.867 | RK:  | [MOZART] 2025-05-08 11:36:10 INFO  Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+
+2025-05-08 11:37:45.867 | RK:  | [MOZART] 2025-05-08 11:36:10 INFO  Starting ProtocolHandler ["http-nio-8089"]
+
+2025-05-08 11:37:45.867 | RK:  | [MOZART] 2025-05-08 11:36:10 INFO  Tomcat started on port 8089 (http) with context path ''
+
+2025-05-08 11:37:45.868 | RK:  | [MOZART] 2025-05-08 11:36:10 INFO  Attempting to connect to: [localhost:5672]
+
+2025-05-08 11:37:45.868 | RK:  | [MOZART] 2025-05-08 11:36:10 INFO  Created new connection: rabbitConnectionFactory#6d672bd4:0/SimpleConnection@49889154 [delegate=amqp://guest@127.0.0.1:5672/, localPort=55603]
+
+2025-05-08 11:37:45.868 | RK:  | [MOZART] 2025-05-08 11:36:10 INFO  Auto-declaring a non-durable, auto-delete, or exclusive Queue (crm.updates.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+
+2025-05-08 11:37:45.868 | RK:  | [MOZART] 2025-05-08 11:36:10 INFO  Started MozartApplication in 2.701 seconds (process running for 3.876)
+
+2025-05-08 11:37:45.868 | RK:  | [MOZART] 2025-05-08 11:36:40 INFO  Waiting for workers to finish.
+
+2025-05-08 11:37:45.868 | RK:  | [MOZART] 2025-05-08 11:36:40 INFO  Successfully waited for workers to finish.
+
+2025-05-08 11:37:47.406 | RK:  | [MOZART] 2025-05-08 11:37:47 INFO  HV000001: Hibernate Validator 8.0.1.Final
+
+2025-05-08 11:37:47.468 | RK:  | [MOZART] 2025-05-08 11:37:47 INFO  Starting MozartApplication using Java 24.0.1 with PID 25092 (C:\Users\jonas\sprint_2\mozart\target\classes started by jonas in C:\Users\jonas\sprint_2\mozart)
+
+2025-05-08 11:37:47.471 | RK:  | [MOZART] 2025-05-08 11:37:47 INFO  No active profile set, falling back to 1 default profile: "default"
+
+2025-05-08 11:37:48.934 | RK:  | [MOZART] 2025-05-08 11:37:48 INFO  Tomcat initialized with port 8089 (http)
+
+2025-05-08 11:37:48.949 | RK:  | [MOZART] 2025-05-08 11:37:48 INFO  Initializing ProtocolHandler ["http-nio-8089"]
+
+2025-05-08 11:37:48.951 | RK:  | [MOZART] 2025-05-08 11:37:48 INFO  Starting service [Tomcat]
+
+2025-05-08 11:37:48.952 | RK:  | [MOZART] 2025-05-08 11:37:48 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+
+2025-05-08 11:37:49.011 | RK:  | [MOZART] 2025-05-08 11:37:49 INFO  Initializing Spring embedded WebApplicationContext
+
+2025-05-08 11:37:49.012 | RK:  | [MOZART] 2025-05-08 11:37:49 INFO  Root WebApplicationContext: initialization completed in 1480 ms
+
+2025-05-08 11:37:49.065 | RK:  | [MOZART] 2025-05-08 11:37:49 WARN  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bestellungController' defined in file [C:\Users\jonas\sprint_2\mozart\target\classes\kirschner\flaig\mozart\controller\BestellungController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'bestellungService': Lookup method resolution failed
+
+2025-05-08 11:37:49.068 | RK:  | [MOZART] 2025-05-08 11:37:49 INFO  Stopping service [Tomcat]
+
+2025-05-08 11:37:49.080 | RK:  | [MOZART] 2025-05-08 11:37:49 INFO  
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+
+2025-05-08 11:37:49.118 | RK:  | [MOZART] 2025-05-08 11:37:49 ERROR Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bestellungController' defined in file [C:\Users\jonas\sprint_2\mozart\target\classes\kirschner\flaig\mozart\controller\BestellungController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'bestellungService': Lookup method resolution failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) [spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) [spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-3.2.5.jar:3.2.5]
+	at kirschner.flaig.mozart.MozartApplication.main(MozartApplication.java:24) [classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'bestellungService': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1294) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 19 more
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [kirschner.flaig.mozart.service.BestellungService] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@11a4022a]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1294) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 19 more
+Caused by: java.lang.NoClassDefFoundError: BestellungResponse
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3035) ~[?:?]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2331) ~[?:?]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1294) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 19 more
+Caused by: java.lang.ClassNotFoundException: BestellungResponse
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580) ~[?:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[?:?]
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3035) ~[?:?]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2331) ~[?:?]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1294) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 19 more
+
+2025-05-08 11:37:50.367 | RK:  | [BEETHOVEN] 2025-05-08 11:37:50 INFO  Starting BeethovenApplication using Java 24.0.1 with PID 19780 (C:\Users\jonas\sprint_2\beethoven\target\classes started by jonas in C:\Users\jonas\sprint_2\beethoven)
+
+2025-05-08 11:37:50.413 | RK:  | [BEETHOVEN] 2025-05-08 11:37:50 INFO  No active profile set, falling back to 1 default profile: "default"
+
+2025-05-08 11:37:51.425 | RK:  | [BEETHOVEN] 2025-05-08 11:37:51 INFO  Tomcat initialized with port 8080 (http)
+
+2025-05-08 11:37:51.445 | RK:  | [BEETHOVEN] 2025-05-08 11:37:51 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+
+2025-05-08 11:37:51.447 | RK:  | [BEETHOVEN] 2025-05-08 11:37:51 INFO  Starting service [Tomcat]
+
+2025-05-08 11:37:51.447 | RK:  | [BEETHOVEN] 2025-05-08 11:37:51 INFO  Starting Servlet engine: [Apache Tomcat/10.1.39]
+
+2025-05-08 11:37:51.502 | RK:  | [BEETHOVEN] 2025-05-08 11:37:51 INFO  Initializing Spring embedded WebApplicationContext
+
+2025-05-08 11:37:51.504 | RK:  | [BEETHOVEN] 2025-05-08 11:37:51 INFO  Root WebApplicationContext: initialization completed in 1086 ms
+
+2025-05-08 11:37:51.955 | RK:  | [BEETHOVEN] 2025-05-08 11:37:51 INFO  Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+
+2025-05-08 11:37:52.093 | RK:  | [BEETHOVEN] 2025-05-08 11:37:52 INFO  Starting ProtocolHandler ["http-nio-8080"]
+
+2025-05-08 11:37:52.110 | RK:  | [BEETHOVEN] 2025-05-08 11:37:52 INFO  Tomcat started on port 8080 (http) with context path '/'
+
+2025-05-08 11:37:52.181 | RK:  | [BEETHOVEN] 2025-05-08 11:37:52 INFO  Registered gRPC service: ErpOrderService, bean: erpOrderService, class: kirschner.flaig.beethoven.service.ErpOrderService
+
+2025-05-08 11:37:52.181 | RK:  | [BEETHOVEN] 2025-05-08 11:37:52 INFO  Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+
+2025-05-08 11:37:52.182 | RK:  | [BEETHOVEN] 2025-05-08 11:37:52 INFO  Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+
+2025-05-08 11:37:52.293 | RK:  | [BEETHOVEN] 2025-05-08 11:37:52 INFO  gRPC Server started, listening on address: *, port: 9090
+
+2025-05-08 11:37:52.300 | RK:  | [BEETHOVEN] 2025-05-08 11:37:52 INFO  Started BeethovenApplication in 2.394 seconds (process running for 3.442)
+
+2025-05-08 11:38:39.747 | RK:  | [MOZART] 2025-05-08 11:38:39 INFO  HV000001: Hibernate Validator 8.0.1.Final
+
+2025-05-08 11:38:39.796 | RK:  | [MOZART] 2025-05-08 11:38:39 INFO  Starting MozartApplication using Java 24.0.1 with PID 31436 (C:\Users\jonas\sprint_2\mozart\target\classes started by jonas in C:\Users\jonas\sprint_2\mozart)
+
+2025-05-08 11:38:39.797 | RK:  | [MOZART] 2025-05-08 11:38:39 INFO  No active profile set, falling back to 1 default profile: "default"
+
+2025-05-08 11:38:40.951 | RK:  | [MOZART] 2025-05-08 11:38:40 INFO  Tomcat initialized with port 8089 (http)
+
+2025-05-08 11:38:40.965 | RK:  | [MOZART] 2025-05-08 11:38:40 INFO  Initializing ProtocolHandler ["http-nio-8089"]
+
+2025-05-08 11:38:40.966 | RK:  | [MOZART] 2025-05-08 11:38:40 INFO  Starting service [Tomcat]
+
+2025-05-08 11:38:40.967 | RK:  | [MOZART] 2025-05-08 11:38:40 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+
+2025-05-08 11:38:41.016 | RK:  | [MOZART] 2025-05-08 11:38:41 INFO  Initializing Spring embedded WebApplicationContext
+
+2025-05-08 11:38:41.018 | RK:  | [MOZART] 2025-05-08 11:38:41 INFO  Root WebApplicationContext: initialization completed in 1173 ms
+
+2025-05-08 11:38:41.297 | RK:  | [MOZART] 2025-05-08 11:38:41 INFO  Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+
+2025-05-08 11:38:41.829 | RK:  | [MOZART] 2025-05-08 11:38:41 INFO  Starting ProtocolHandler ["http-nio-8089"]
+
+2025-05-08 11:38:41.840 | RK:  | [MOZART] 2025-05-08 11:38:41 INFO  Tomcat started on port 8089 (http) with context path ''
+
+2025-05-08 11:38:41.843 | RK:  | [MOZART] 2025-05-08 11:38:41 INFO  Attempting to connect to: [localhost:5672]
+
+2025-05-08 11:38:41.856 | RK:  | [MOZART] 2025-05-08 11:38:41 INFO  Created new connection: rabbitConnectionFactory#6d672bd4:0/SimpleConnection@49889154 [delegate=amqp://guest@127.0.0.1:5672/, localPort=55644]
+
+2025-05-08 11:38:41.863 | RK:  | [MOZART] 2025-05-08 11:38:41 INFO  Auto-declaring a non-durable, auto-delete, or exclusive Queue (crm.updates.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+
+2025-05-08 11:38:41.922 | RK:  | [MOZART] 2025-05-08 11:38:41 INFO  Started MozartApplication in 2.583 seconds (process running for 3.799)
+
+2025-05-08 11:39:18.084 | RK:  | "[SCHUHMACHER] 2025-05-08 11:39:17 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 11:39:18.086 | RK:  | "[SCHUHMACHER] 2025-05-08 11:39:17 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 11:39:18.086 | RK:  | "[SCHUHMACHER] 2025-05-08 11:39:17 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 11:39:18.086 | RK:  | "[SCHUHMACHER] 2025-05-08 11:39:18 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 11:39:18.086 | RK:  | "[SCHUHMACHER] 2025-05-08 11:39:18 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 11:39:18.159 | RK:  | "[SCHUHMACHER] 2025-05-08 11:39:18 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 11:39:45.489 | RK:  | [MOZART] 2025-05-08 11:39:45 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2025-05-08 11:39:45.490 | RK:  | [MOZART] 2025-05-08 11:39:45 INFO  Initializing Servlet 'dispatcherServlet'
+
+2025-05-08 11:39:45.490 | RK:  | [MOZART] 2025-05-08 11:39:45 INFO  Completed initialization in 1 ms
+
+2025-05-08 11:39:45.658 | RK:  | [MOZART] 2025-05-08 11:39:45 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:39:45.659 | RK:  | [MOZART] 2025-05-08 11:39:45 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:39:45.678 | RK:  | [MOZART] 2025-05-08 11:39:45 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:39:46.016 | RK:  | [BEETHOVEN] 2025-05-08 11:39:46 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:39:46.029 | RK:  | [BEETHOVEN] 2025-05-08 11:39:46 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 246.
+
+2025-05-08 11:39:46.030 | RK:  | [BEETHOVEN] 2025-05-08 11:39:46 INFO  ErpOrderService: Bestellabwicklung mit ID 67d8dd05-d185-421d-9835-697ffeca22ce im Repository gespeichert.
+
+2025-05-08 11:39:46.042 | RK:  | [BEETHOVEN] 2025-05-08 11:39:46 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 67d8dd05-d185-421d-9835-697ffeca22ce
+
+2025-05-08 11:39:46.062 | RK:  | [MOZART] 2025-05-08 11:39:46 INFO  BestellungService: Erstelle Bestellung mit Order ID: 67d8dd05-d185-421d-9835-697ffeca22ce...
+
+2025-05-08 11:39:46.063 | RK:  | [MOZART] 2025-05-08 11:39:46 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 67d8dd05-d185-421d-9835-697ffeca22ce...
+
+2025-05-08 11:39:46.064 | RK:  | [MOZART] 2025-05-08 11:39:46 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 67d8dd05-d185-421d-9835-697ffeca22ce...
+
+2025-05-08 11:39:46.101 | RK:  | [MOZART] 2025-05-08 11:39:46 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 67d8dd05-d185-421d-9835-697ffeca22ce...
+
+2025-05-08 11:39:46.103 | RK:  | [MOZART] 2025-05-08 11:39:46 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:39:46.027595800, lieferstatus=PROCESSING}...
+
+2025-05-08 11:39:46.103 | RK:  | [MOZART] 2025-05-08 11:39:46 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:39:46.027595800, lieferstatus=PROCESSING}...
+
+2025-05-08 11:39:46.108 | RK:  | "[SCHUHMACHER] 2025-05-08 11:39:46 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"67d8dd05-d185-421d-9835-697ffeca22ce\",\"kundenId\":\"KundenID-883\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@beispiel.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 11:39:46.108 | RK:  | "[SCHUHMACHER] 2025-05-08 11:39:46 DEBUG [ECommerceListener] New customer added with ID: KundenID-883"
+2025-05-08 11:39:46.108 | RK:  | "[SCHUHMACHER] 2025-05-08 11:39:46 DEBUG [ECommerceListener] New order 67d8dd05-d185-421d-9835-697ffeca22ce added for customer KundenID-883. Initial status from DTO will be applied."
+2025-05-08 11:39:46.108 | RK:  | "[SCHUHMACHER] 2025-05-08 11:39:46 DEBUG [ECommerceListener] Bestellung 67d8dd05-d185-421d-9835-697ffeca22ce status updated to 1"
+2025-05-08 11:39:46.109 | RK:  | "[SCHUHMACHER] 2025-05-08 11:39:46 DEBUG [ECommerceListener] Bestellung 67d8dd05-d185-421d-9835-697ffeca22ce updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 11:40:00.032 | RK:  | [MOZART] 2025-05-08 11:40:00 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:40:00.033 | RK:  | [MOZART] 2025-05-08 11:40:00 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:40:00.035 | RK:  | [MOZART] 2025-05-08 11:40:00 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:40:00.044 | RK:  | [BEETHOVEN] 2025-05-08 11:40:00 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:40:00.045 | RK:  | [BEETHOVEN] 2025-05-08 11:40:00 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 242.
+
+2025-05-08 11:40:00.047 | RK:  | [BEETHOVEN] 2025-05-08 11:40:00 INFO  ErpOrderService: Bestellabwicklung mit ID 048e26ec-3a29-40be-bd9e-02a36f90720e im Repository gespeichert.
+
+2025-05-08 11:40:00.050 | RK:  | [BEETHOVEN] 2025-05-08 11:40:00 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 048e26ec-3a29-40be-bd9e-02a36f90720e
+
+2025-05-08 11:40:00.053 | RK:  | [MOZART] 2025-05-08 11:40:00 INFO  BestellungService: Erstelle Bestellung mit Order ID: 048e26ec-3a29-40be-bd9e-02a36f90720e...
+
+2025-05-08 11:40:00.055 | RK:  | [MOZART] 2025-05-08 11:40:00 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 048e26ec-3a29-40be-bd9e-02a36f90720e...
+
+2025-05-08 11:40:00.055 | RK:  | [MOZART] 2025-05-08 11:40:00 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 048e26ec-3a29-40be-bd9e-02a36f90720e...
+
+2025-05-08 11:40:00.057 | RK:  | [MOZART] 2025-05-08 11:40:00 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 048e26ec-3a29-40be-bd9e-02a36f90720e...
+
+2025-05-08 11:40:00.058 | RK:  | [MOZART] 2025-05-08 11:40:00 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:40:00.042669, lieferstatus=PROCESSING}...
+
+2025-05-08 11:40:00.059 | RK:  | [MOZART] 2025-05-08 11:40:00 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:40:00.042669, lieferstatus=PROCESSING}...
+
+2025-05-08 11:40:00.067 | RK:  | "[SCHUHMACHER] 2025-05-08 11:40:00 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 11:40:11.470 | RK:  | [MOZART] 2025-05-08 11:40:11 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:40:11.471 | RK:  | [MOZART] 2025-05-08 11:40:11 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:40:11.471 | RK:  | [MOZART] 2025-05-08 11:40:11 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:40:11.476 | RK:  | [BEETHOVEN] 2025-05-08 11:40:11 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:40:11.476 | RK:  | [BEETHOVEN] 2025-05-08 11:40:11 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 238.
+
+2025-05-08 11:40:11.477 | RK:  | [BEETHOVEN] 2025-05-08 11:40:11 INFO  ErpOrderService: Bestellabwicklung mit ID 4b1c0e8e-d0da-4446-8e68-b872bb9813d0 im Repository gespeichert.
+
+2025-05-08 11:40:11.479 | RK:  | [BEETHOVEN] 2025-05-08 11:40:11 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 4b1c0e8e-d0da-4446-8e68-b872bb9813d0
+
+2025-05-08 11:40:11.480 | RK:  | [MOZART] 2025-05-08 11:40:11 INFO  BestellungService: Erstelle Bestellung mit Order ID: 4b1c0e8e-d0da-4446-8e68-b872bb9813d0...
+
+2025-05-08 11:40:11.481 | RK:  | [MOZART] 2025-05-08 11:40:11 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 4b1c0e8e-d0da-4446-8e68-b872bb9813d0...
+
+2025-05-08 11:40:11.481 | RK:  | [MOZART] 2025-05-08 11:40:11 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 4b1c0e8e-d0da-4446-8e68-b872bb9813d0...
+
+2025-05-08 11:40:11.483 | RK:  | [MOZART] 2025-05-08 11:40:11 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 4b1c0e8e-d0da-4446-8e68-b872bb9813d0...
+
+2025-05-08 11:40:11.484 | RK:  | [MOZART] 2025-05-08 11:40:11 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:40:11.473883400, lieferstatus=PROCESSING}...
+
+2025-05-08 11:40:11.484 | RK:  | [MOZART] 2025-05-08 11:40:11 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:40:11.473883400, lieferstatus=PROCESSING}...
+
+2025-05-08 11:40:11.486 | RK:  | "[SCHUHMACHER] 2025-05-08 11:40:11 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"4b1c0e8e-d0da-4446-8e68-b872bb9813d0\",\"kundenId\":\"KundenID-883\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@beispiel.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 11:40:11.487 | RK:  | "[SCHUHMACHER] 2025-05-08 11:40:11 DEBUG [ECommerceListener] New order 4b1c0e8e-d0da-4446-8e68-b872bb9813d0 added for customer KundenID-883. Initial status from DTO will be applied."
+2025-05-08 11:40:11.487 | RK:  | "[SCHUHMACHER] 2025-05-08 11:40:11 DEBUG [ECommerceListener] Bestellung 4b1c0e8e-d0da-4446-8e68-b872bb9813d0 status updated to 1"
+2025-05-08 11:40:11.487 | RK:  | "[SCHUHMACHER] 2025-05-08 11:40:11 DEBUG [ECommerceListener] Bestellung 4b1c0e8e-d0da-4446-8e68-b872bb9813d0 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 11:40:17.490 | RK:  | [MOZART] 2025-05-08 11:40:17 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:40:17.491 | RK:  | [MOZART] 2025-05-08 11:40:17 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:40:17.492 | RK:  | [MOZART] 2025-05-08 11:40:17 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:40:17.498 | RK:  | [BEETHOVEN] 2025-05-08 11:40:17 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:40:17.498 | RK:  | [BEETHOVEN] 2025-05-08 11:40:17 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 234.
+
+2025-05-08 11:40:17.499 | RK:  | [BEETHOVEN] 2025-05-08 11:40:17 INFO  ErpOrderService: Bestellabwicklung mit ID 139c6ca2-7995-4fbb-baa2-43f821d9d403 im Repository gespeichert.
+
+2025-05-08 11:40:17.501 | RK:  | [BEETHOVEN] 2025-05-08 11:40:17 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 139c6ca2-7995-4fbb-baa2-43f821d9d403
+
+2025-05-08 11:40:17.504 | RK:  | [MOZART] 2025-05-08 11:40:17 INFO  BestellungService: Erstelle Bestellung mit Order ID: 139c6ca2-7995-4fbb-baa2-43f821d9d403...
+
+2025-05-08 11:40:17.506 | RK:  | [MOZART] 2025-05-08 11:40:17 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 139c6ca2-7995-4fbb-baa2-43f821d9d403...
+
+2025-05-08 11:40:17.506 | RK:  | [MOZART] 2025-05-08 11:40:17 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 139c6ca2-7995-4fbb-baa2-43f821d9d403...
+
+2025-05-08 11:40:17.507 | RK:  | [MOZART] 2025-05-08 11:40:17 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 139c6ca2-7995-4fbb-baa2-43f821d9d403...
+
+2025-05-08 11:40:17.508 | RK:  | [MOZART] 2025-05-08 11:40:17 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:40:17.495918300, lieferstatus=PROCESSING}...
+
+2025-05-08 11:40:17.509 | RK:  | [MOZART] 2025-05-08 11:40:17 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:40:17.495918300, lieferstatus=PROCESSING}...
+
+2025-05-08 11:40:17.509 | RK:  | "[SCHUHMACHER] 2025-05-08 11:40:17 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 11:49:08.524 | RK:  | [MOZART] 2025-05-08 11:49:08 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:49:08.524 | RK:  | [MOZART] 2025-05-08 11:49:08 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:49:08.525 | RK:  | [MOZART] 2025-05-08 11:49:08 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:49:08.533 | RK:  | [BEETHOVEN] 2025-05-08 11:49:08 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:49:08.533 | RK:  | [BEETHOVEN] 2025-05-08 11:49:08 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 230.
+
+2025-05-08 11:49:08.534 | RK:  | [BEETHOVEN] 2025-05-08 11:49:08 INFO  ErpOrderService: Bestellabwicklung mit ID 26ba54fc-fa24-4da2-9930-dc4338cf2ed4 im Repository gespeichert.
+
+2025-05-08 11:49:08.536 | RK:  | [BEETHOVEN] 2025-05-08 11:49:08 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 26ba54fc-fa24-4da2-9930-dc4338cf2ed4
+
+2025-05-08 11:49:08.539 | RK:  | [MOZART] 2025-05-08 11:49:08 INFO  BestellungService: Erstelle Bestellung mit Order ID: 26ba54fc-fa24-4da2-9930-dc4338cf2ed4...
+
+2025-05-08 11:49:08.539 | RK:  | [MOZART] 2025-05-08 11:49:08 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 26ba54fc-fa24-4da2-9930-dc4338cf2ed4...
+
+2025-05-08 11:49:08.540 | RK:  | [MOZART] 2025-05-08 11:49:08 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 26ba54fc-fa24-4da2-9930-dc4338cf2ed4...
+
+2025-05-08 11:49:08.541 | RK:  | [MOZART] 2025-05-08 11:49:08 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 26ba54fc-fa24-4da2-9930-dc4338cf2ed4...
+
+2025-05-08 11:49:08.542 | RK:  | [MOZART] 2025-05-08 11:49:08 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:49:08.530685400, lieferstatus=PROCESSING}...
+
+2025-05-08 11:49:08.542 | RK:  | [MOZART] 2025-05-08 11:49:08 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:49:08.530685400, lieferstatus=PROCESSING}...
+
+2025-05-08 11:49:10.266 | RK:  | [MOZART] 2025-05-08 11:49:10 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:49:10.267 | RK:  | [MOZART] 2025-05-08 11:49:10 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:49:10.267 | RK:  | [MOZART] 2025-05-08 11:49:10 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:49:10.272 | RK:  | [BEETHOVEN] 2025-05-08 11:49:10 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:49:10.273 | RK:  | [BEETHOVEN] 2025-05-08 11:49:10 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 226.
+
+2025-05-08 11:49:10.273 | RK:  | [BEETHOVEN] 2025-05-08 11:49:10 INFO  ErpOrderService: Bestellabwicklung mit ID 8d428f9b-384d-4f3f-8821-f98afd899d2b im Repository gespeichert.
+
+2025-05-08 11:49:10.273 | RK:  | [BEETHOVEN] 2025-05-08 11:49:10 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 8d428f9b-384d-4f3f-8821-f98afd899d2b
+
+2025-05-08 11:49:10.275 | RK:  | [MOZART] 2025-05-08 11:49:10 INFO  BestellungService: Erstelle Bestellung mit Order ID: 8d428f9b-384d-4f3f-8821-f98afd899d2b...
+
+2025-05-08 11:49:10.275 | RK:  | [MOZART] 2025-05-08 11:49:10 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 8d428f9b-384d-4f3f-8821-f98afd899d2b...
+
+2025-05-08 11:49:10.276 | RK:  | [MOZART] 2025-05-08 11:49:10 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 8d428f9b-384d-4f3f-8821-f98afd899d2b...
+
+2025-05-08 11:49:10.278 | RK:  | [MOZART] 2025-05-08 11:49:10 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 8d428f9b-384d-4f3f-8821-f98afd899d2b...
+
+2025-05-08 11:49:10.279 | RK:  | [MOZART] 2025-05-08 11:49:10 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:49:10.269688, lieferstatus=PROCESSING}...
+
+2025-05-08 11:49:10.279 | RK:  | [MOZART] 2025-05-08 11:49:10 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:49:10.269688, lieferstatus=PROCESSING}...
+
+2025-05-08 11:49:15.768 | RK:  | [MOZART] 2025-05-08 11:49:15 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:49:15.769 | RK:  | [MOZART] 2025-05-08 11:49:15 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:49:15.771 | RK:  | [MOZART] 2025-05-08 11:49:15 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:49:15.779 | RK:  | [BEETHOVEN] 2025-05-08 11:49:15 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:49:15.782 | RK:  | [BEETHOVEN] 2025-05-08 11:49:15 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 222.
+
+2025-05-08 11:49:15.783 | RK:  | [BEETHOVEN] 2025-05-08 11:49:15 INFO  ErpOrderService: Bestellabwicklung mit ID 793905db-660d-4df8-9688-edf8c28071a9 im Repository gespeichert.
+
+2025-05-08 11:49:15.785 | RK:  | [BEETHOVEN] 2025-05-08 11:49:15 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 793905db-660d-4df8-9688-edf8c28071a9
+
+2025-05-08 11:49:15.790 | RK:  | [MOZART] 2025-05-08 11:49:15 INFO  BestellungService: Erstelle Bestellung mit Order ID: 793905db-660d-4df8-9688-edf8c28071a9...
+
+2025-05-08 11:49:15.790 | RK:  | [MOZART] 2025-05-08 11:49:15 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 793905db-660d-4df8-9688-edf8c28071a9...
+
+2025-05-08 11:49:15.791 | RK:  | [MOZART] 2025-05-08 11:49:15 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 793905db-660d-4df8-9688-edf8c28071a9...
+
+2025-05-08 11:49:15.792 | RK:  | [MOZART] 2025-05-08 11:49:15 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 793905db-660d-4df8-9688-edf8c28071a9...
+
+2025-05-08 11:49:15.793 | RK:  | [MOZART] 2025-05-08 11:49:15 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:49:15.776840300, lieferstatus=PROCESSING}...
+
+2025-05-08 11:49:15.794 | RK:  | [MOZART] 2025-05-08 11:49:15 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:49:15.776840300, lieferstatus=PROCESSING}...
+
+2025-05-08 11:49:23.019 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 11:49:23.020 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 11:49:23.020 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 11:49:23.021 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 INFO [RabbitMQModule] ECommerceListener.handleAll {subscribe} -> crm.direct.exchange::#::debug.queue"
+2025-05-08 11:49:23.021 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 11:49:23.022 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"26ba54fc-fa24-4da2-9930-dc4338cf2ed4\",\"kundenId\":\"KundenID-883\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@beispiel.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 11:49:23.022 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] New customer added with ID: KundenID-883"
+2025-05-08 11:49:23.023 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] New order 26ba54fc-fa24-4da2-9930-dc4338cf2ed4 added for customer KundenID-883. Initial status from DTO will be applied."
+2025-05-08 11:49:23.023 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] Bestellung 26ba54fc-fa24-4da2-9930-dc4338cf2ed4 status updated to 1"
+2025-05-08 11:49:23.024 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] Bestellung 26ba54fc-fa24-4da2-9930-dc4338cf2ed4 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 11:49:23.024 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"8d428f9b-384d-4f3f-8821-f98afd899d2b\",\"kundenId\":\"KundenID-883\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@beispiel.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 11:49:23.025 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] New order 8d428f9b-384d-4f3f-8821-f98afd899d2b added for customer KundenID-883. Initial status from DTO will be applied."
+2025-05-08 11:49:23.026 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] Bestellung 8d428f9b-384d-4f3f-8821-f98afd899d2b status updated to 1"
+2025-05-08 11:49:23.026 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] Bestellung 8d428f9b-384d-4f3f-8821-f98afd899d2b updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 11:49:23.027 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"793905db-660d-4df8-9688-edf8c28071a9\",\"kundenId\":\"KundenID-883\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@beispiel.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 11:49:23.027 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] New order 793905db-660d-4df8-9688-edf8c28071a9 added for customer KundenID-883. Initial status from DTO will be applied."
+2025-05-08 11:49:23.028 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] Bestellung 793905db-660d-4df8-9688-edf8c28071a9 status updated to 1"
+2025-05-08 11:49:23.029 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 DEBUG [ECommerceListener] Bestellung 793905db-660d-4df8-9688-edf8c28071a9 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 11:49:23.029 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:22 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 11:49:23.049 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:23 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 11:49:36.158 | RK:  | [MOZART] 2025-05-08 11:49:36 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:49:36.158 | RK:  | [MOZART] 2025-05-08 11:49:36 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:49:36.158 | RK:  | [MOZART] 2025-05-08 11:49:36 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:49:36.164 | RK:  | [BEETHOVEN] 2025-05-08 11:49:36 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:49:36.166 | RK:  | [BEETHOVEN] 2025-05-08 11:49:36 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 218.
+
+2025-05-08 11:49:36.167 | RK:  | [BEETHOVEN] 2025-05-08 11:49:36 INFO  ErpOrderService: Bestellabwicklung mit ID 3c0be561-85dc-4bb9-b1ce-2b1098b0be30 im Repository gespeichert.
+
+2025-05-08 11:49:36.170 | RK:  | [BEETHOVEN] 2025-05-08 11:49:36 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 3c0be561-85dc-4bb9-b1ce-2b1098b0be30
+
+2025-05-08 11:49:36.172 | RK:  | [MOZART] 2025-05-08 11:49:36 INFO  BestellungService: Erstelle Bestellung mit Order ID: 3c0be561-85dc-4bb9-b1ce-2b1098b0be30...
+
+2025-05-08 11:49:36.174 | RK:  | [MOZART] 2025-05-08 11:49:36 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 3c0be561-85dc-4bb9-b1ce-2b1098b0be30...
+
+2025-05-08 11:49:36.174 | RK:  | [MOZART] 2025-05-08 11:49:36 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 3c0be561-85dc-4bb9-b1ce-2b1098b0be30...
+
+2025-05-08 11:49:36.174 | RK:  | [MOZART] 2025-05-08 11:49:36 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 3c0be561-85dc-4bb9-b1ce-2b1098b0be30...
+
+2025-05-08 11:49:36.175 | RK:  | [MOZART] 2025-05-08 11:49:36 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:49:36.161456500, lieferstatus=PROCESSING}...
+
+2025-05-08 11:49:36.175 | RK:  | [MOZART] 2025-05-08 11:49:36 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:49:36.161456500, lieferstatus=PROCESSING}...
+
+2025-05-08 11:49:36.178 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:36 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"3c0be561-85dc-4bb9-b1ce-2b1098b0be30\",\"kundenId\":\"KundenID-883\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@beispiel.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 11:49:36.179 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:36 DEBUG [ECommerceListener] New order 3c0be561-85dc-4bb9-b1ce-2b1098b0be30 added for customer KundenID-883. Initial status from DTO will be applied."
+2025-05-08 11:49:36.180 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:36 DEBUG [ECommerceListener] Bestellung 3c0be561-85dc-4bb9-b1ce-2b1098b0be30 status updated to 1"
+2025-05-08 11:49:36.180 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:36 DEBUG [ECommerceListener] Bestellung 3c0be561-85dc-4bb9-b1ce-2b1098b0be30 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 11:49:39.847 | RK:  | [MOZART] 2025-05-08 11:49:39 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:49:39.848 | RK:  | [MOZART] 2025-05-08 11:49:39 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:49:39.849 | RK:  | [MOZART] 2025-05-08 11:49:39 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:49:39.854 | RK:  | [BEETHOVEN] 2025-05-08 11:49:39 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:49:39.854 | RK:  | [BEETHOVEN] 2025-05-08 11:49:39 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 214.
+
+2025-05-08 11:49:39.855 | RK:  | [BEETHOVEN] 2025-05-08 11:49:39 INFO  ErpOrderService: Bestellabwicklung mit ID 1cd0af8c-7da6-4690-9635-9d6cc0c65207 im Repository gespeichert.
+
+2025-05-08 11:49:39.857 | RK:  | [BEETHOVEN] 2025-05-08 11:49:39 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 1cd0af8c-7da6-4690-9635-9d6cc0c65207
+
+2025-05-08 11:49:39.859 | RK:  | [MOZART] 2025-05-08 11:49:39 INFO  BestellungService: Erstelle Bestellung mit Order ID: 1cd0af8c-7da6-4690-9635-9d6cc0c65207...
+
+2025-05-08 11:49:39.860 | RK:  | [MOZART] 2025-05-08 11:49:39 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 1cd0af8c-7da6-4690-9635-9d6cc0c65207...
+
+2025-05-08 11:49:39.860 | RK:  | [MOZART] 2025-05-08 11:49:39 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 1cd0af8c-7da6-4690-9635-9d6cc0c65207...
+
+2025-05-08 11:49:39.861 | RK:  | [MOZART] 2025-05-08 11:49:39 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 1cd0af8c-7da6-4690-9635-9d6cc0c65207...
+
+2025-05-08 11:49:39.862 | RK:  | [MOZART] 2025-05-08 11:49:39 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:49:39.851658100, lieferstatus=PROCESSING}...
+
+2025-05-08 11:49:39.871 | RK:  | [MOZART] 2025-05-08 11:49:39 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:49:39.851658100, lieferstatus=PROCESSING}...
+
+2025-05-08 11:49:39.879 | RK:  | "[SCHUHMACHER] 2025-05-08 11:49:39 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 11:54:45.514 | RK:  | "[SCHUHMACHER] 2025-05-08 11:54:45 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 11:54:45.518 | RK:  | "[SCHUHMACHER] 2025-05-08 11:54:45 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 11:54:45.518 | RK:  | "[SCHUHMACHER] 2025-05-08 11:54:45 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 11:54:45.519 | RK:  | "[SCHUHMACHER] 2025-05-08 11:54:45 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 11:54:45.519 | RK:  | "[SCHUHMACHER] 2025-05-08 11:54:45 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 11:54:45.617 | RK:  | "[SCHUHMACHER] 2025-05-08 11:54:45 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 11:54:48.352 | RK:  | [MOZART] 2025-05-08 11:54:48 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:54:48.352 | RK:  | [MOZART] 2025-05-08 11:54:48 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:54:48.352 | RK:  | [MOZART] 2025-05-08 11:54:48 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:54:48.361 | RK:  | [BEETHOVEN] 2025-05-08 11:54:48 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:54:48.362 | RK:  | [BEETHOVEN] 2025-05-08 11:54:48 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 210.
+
+2025-05-08 11:54:48.362 | RK:  | [BEETHOVEN] 2025-05-08 11:54:48 INFO  ErpOrderService: Bestellabwicklung mit ID 01c60486-f901-4d22-a8bc-4ab4ce97eb89 im Repository gespeichert.
+
+2025-05-08 11:54:48.368 | RK:  | [BEETHOVEN] 2025-05-08 11:54:48 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 01c60486-f901-4d22-a8bc-4ab4ce97eb89
+
+2025-05-08 11:54:48.370 | RK:  | [MOZART] 2025-05-08 11:54:48 INFO  BestellungService: Erstelle Bestellung mit Order ID: 01c60486-f901-4d22-a8bc-4ab4ce97eb89...
+
+2025-05-08 11:54:48.371 | RK:  | [MOZART] 2025-05-08 11:54:48 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 01c60486-f901-4d22-a8bc-4ab4ce97eb89...
+
+2025-05-08 11:54:48.372 | RK:  | [MOZART] 2025-05-08 11:54:48 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 01c60486-f901-4d22-a8bc-4ab4ce97eb89...
+
+2025-05-08 11:54:48.374 | RK:  | [MOZART] 2025-05-08 11:54:48 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 01c60486-f901-4d22-a8bc-4ab4ce97eb89...
+
+2025-05-08 11:54:48.375 | RK:  | [MOZART] 2025-05-08 11:54:48 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:54:48.360064800, lieferstatus=PROCESSING}...
+
+2025-05-08 11:54:48.377 | RK:  | [MOZART] 2025-05-08 11:54:48 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:54:48.360064800, lieferstatus=PROCESSING}...
+
+2025-05-08 11:54:48.385 | RK:  | "[SCHUHMACHER] 2025-05-08 11:54:48 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"01c60486-f901-4d22-a8bc-4ab4ce97eb89\",\"kundenId\":\"KundenID-883\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@beispiel.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 11:54:48.388 | RK:  | "[SCHUHMACHER] 2025-05-08 11:54:48 DEBUG [ECommerceListener] New customer added with ID: KundenID-883"
+2025-05-08 11:54:48.388 | RK:  | "[SCHUHMACHER] 2025-05-08 11:54:48 DEBUG [ECommerceListener] New order 01c60486-f901-4d22-a8bc-4ab4ce97eb89 added for customer KundenID-883. Initial status from DTO will be applied."
+2025-05-08 11:54:48.388 | RK:  | "[SCHUHMACHER] 2025-05-08 11:54:48 DEBUG [ECommerceListener] Bestellung 01c60486-f901-4d22-a8bc-4ab4ce97eb89 status updated to 1"
+2025-05-08 11:54:48.389 | RK:  | "[SCHUHMACHER] 2025-05-08 11:54:48 DEBUG [ECommerceListener] Bestellung 01c60486-f901-4d22-a8bc-4ab4ce97eb89 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 11:54:53.789 | RK:  | [MOZART] 2025-05-08 11:54:53 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:54:53.790 | RK:  | [MOZART] 2025-05-08 11:54:53 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:54:53.791 | RK:  | [MOZART] 2025-05-08 11:54:53 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:54:53.796 | RK:  | [BEETHOVEN] 2025-05-08 11:54:53 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:54:53.796 | RK:  | [BEETHOVEN] 2025-05-08 11:54:53 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 206.
+
+2025-05-08 11:54:53.798 | RK:  | [BEETHOVEN] 2025-05-08 11:54:53 INFO  ErpOrderService: Bestellabwicklung mit ID 355970ae-be58-45f8-a645-608f5bbd8c03 im Repository gespeichert.
+
+2025-05-08 11:54:53.799 | RK:  | [BEETHOVEN] 2025-05-08 11:54:53 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 355970ae-be58-45f8-a645-608f5bbd8c03
+
+2025-05-08 11:54:53.801 | RK:  | [MOZART] 2025-05-08 11:54:53 INFO  BestellungService: Erstelle Bestellung mit Order ID: 355970ae-be58-45f8-a645-608f5bbd8c03...
+
+2025-05-08 11:54:53.802 | RK:  | [MOZART] 2025-05-08 11:54:53 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 355970ae-be58-45f8-a645-608f5bbd8c03...
+
+2025-05-08 11:54:53.804 | RK:  | [MOZART] 2025-05-08 11:54:53 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 355970ae-be58-45f8-a645-608f5bbd8c03...
+
+2025-05-08 11:54:53.806 | RK:  | [MOZART] 2025-05-08 11:54:53 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 355970ae-be58-45f8-a645-608f5bbd8c03...
+
+2025-05-08 11:54:53.807 | RK:  | [MOZART] 2025-05-08 11:54:53 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:54:53.794296200, lieferstatus=PROCESSING}...
+
+2025-05-08 11:54:53.809 | RK:  | [MOZART] 2025-05-08 11:54:53 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:54:53.794296200, lieferstatus=PROCESSING}...
+
+2025-05-08 11:54:53.813 | RK:  | "[SCHUHMACHER] 2025-05-08 11:54:53 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 11:56:13.851 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:13 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 11:56:13.851 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:13 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 11:56:13.852 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:13 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 11:56:13.852 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:13 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 11:56:13.852 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:13 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 11:56:13.936 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:13 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 11:56:19.588 | RK:  | [MOZART] 2025-05-08 11:56:19 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:56:19.589 | RK:  | [MOZART] 2025-05-08 11:56:19 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:56:19.589 | RK:  | [MOZART] 2025-05-08 11:56:19 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:56:19.592 | RK:  | [BEETHOVEN] 2025-05-08 11:56:19 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:56:19.592 | RK:  | [BEETHOVEN] 2025-05-08 11:56:19 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 202.
+
+2025-05-08 11:56:19.593 | RK:  | [BEETHOVEN] 2025-05-08 11:56:19 INFO  ErpOrderService: Bestellabwicklung mit ID 099a8e6f-6617-4a37-a7c6-f3023de08ca4 im Repository gespeichert.
+
+2025-05-08 11:56:19.594 | RK:  | [BEETHOVEN] 2025-05-08 11:56:19 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 099a8e6f-6617-4a37-a7c6-f3023de08ca4
+
+2025-05-08 11:56:19.596 | RK:  | [MOZART] 2025-05-08 11:56:19 INFO  BestellungService: Erstelle Bestellung mit Order ID: 099a8e6f-6617-4a37-a7c6-f3023de08ca4...
+
+2025-05-08 11:56:19.597 | RK:  | [MOZART] 2025-05-08 11:56:19 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 099a8e6f-6617-4a37-a7c6-f3023de08ca4...
+
+2025-05-08 11:56:19.598 | RK:  | [MOZART] 2025-05-08 11:56:19 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 099a8e6f-6617-4a37-a7c6-f3023de08ca4...
+
+2025-05-08 11:56:19.600 | RK:  | [MOZART] 2025-05-08 11:56:19 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 099a8e6f-6617-4a37-a7c6-f3023de08ca4...
+
+2025-05-08 11:56:19.601 | RK:  | [MOZART] 2025-05-08 11:56:19 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:56:19.590428900, lieferstatus=PROCESSING}...
+
+2025-05-08 11:56:19.601 | RK:  | [MOZART] 2025-05-08 11:56:19 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:56:19.590428900, lieferstatus=PROCESSING}...
+
+2025-05-08 11:56:19.607 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:19 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"099a8e6f-6617-4a37-a7c6-f3023de08ca4\",\"kundenId\":\"KundenID-883\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@beispiel.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 11:56:19.607 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:19 DEBUG [ECommerceListener] New customer added with ID: KundenID-883"
+2025-05-08 11:56:19.607 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:19 DEBUG [ECommerceListener] New order 099a8e6f-6617-4a37-a7c6-f3023de08ca4 added for customer KundenID-883. Initial status from DTO will be applied."
+2025-05-08 11:56:19.607 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:19 DEBUG [ECommerceListener] Bestellung 099a8e6f-6617-4a37-a7c6-f3023de08ca4 status updated to 1"
+2025-05-08 11:56:19.607 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:19 DEBUG [ECommerceListener] Bestellung 099a8e6f-6617-4a37-a7c6-f3023de08ca4 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 11:56:20.700 | RK:  | [MOZART] 2025-05-08 11:56:20 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:56:20.701 | RK:  | [MOZART] 2025-05-08 11:56:20 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:56:20.702 | RK:  | [MOZART] 2025-05-08 11:56:20 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:56:20.707 | RK:  | [BEETHOVEN] 2025-05-08 11:56:20 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:56:20.708 | RK:  | [BEETHOVEN] 2025-05-08 11:56:20 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 198.
+
+2025-05-08 11:56:20.709 | RK:  | [BEETHOVEN] 2025-05-08 11:56:20 INFO  ErpOrderService: Bestellabwicklung mit ID 712cdcbc-b4a3-4d78-a8b4-6bee5924c528 im Repository gespeichert.
+
+2025-05-08 11:56:20.712 | RK:  | [BEETHOVEN] 2025-05-08 11:56:20 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 712cdcbc-b4a3-4d78-a8b4-6bee5924c528
+
+2025-05-08 11:56:20.715 | RK:  | [MOZART] 2025-05-08 11:56:20 INFO  BestellungService: Erstelle Bestellung mit Order ID: 712cdcbc-b4a3-4d78-a8b4-6bee5924c528...
+
+2025-05-08 11:56:20.716 | RK:  | [MOZART] 2025-05-08 11:56:20 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 712cdcbc-b4a3-4d78-a8b4-6bee5924c528...
+
+2025-05-08 11:56:20.717 | RK:  | [MOZART] 2025-05-08 11:56:20 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 712cdcbc-b4a3-4d78-a8b4-6bee5924c528...
+
+2025-05-08 11:56:20.719 | RK:  | [MOZART] 2025-05-08 11:56:20 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 712cdcbc-b4a3-4d78-a8b4-6bee5924c528...
+
+2025-05-08 11:56:20.720 | RK:  | [MOZART] 2025-05-08 11:56:20 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:56:20.704737900, lieferstatus=PROCESSING}...
+
+2025-05-08 11:56:20.721 | RK:  | [MOZART] 2025-05-08 11:56:20 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:56:20.704737900, lieferstatus=PROCESSING}...
+
+2025-05-08 11:56:20.724 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:20 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 11:56:34.957 | RK:  | [MOZART] 2025-05-08 11:56:34 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:56:34.959 | RK:  | [MOZART] 2025-05-08 11:56:34 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:56:34.962 | RK:  | [MOZART] 2025-05-08 11:56:34 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:56:34.969 | RK:  | [BEETHOVEN] 2025-05-08 11:56:34 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:56:34.971 | RK:  | [BEETHOVEN] 2025-05-08 11:56:34 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 194.
+
+2025-05-08 11:56:34.973 | RK:  | [BEETHOVEN] 2025-05-08 11:56:34 INFO  ErpOrderService: Bestellabwicklung mit ID e1949b73-9542-4846-bcfa-9b2d5b58f34c im Repository gespeichert.
+
+2025-05-08 11:56:34.977 | RK:  | [BEETHOVEN] 2025-05-08 11:56:34 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: e1949b73-9542-4846-bcfa-9b2d5b58f34c
+
+2025-05-08 11:56:34.981 | RK:  | [MOZART] 2025-05-08 11:56:34 INFO  BestellungService: Erstelle Bestellung mit Order ID: e1949b73-9542-4846-bcfa-9b2d5b58f34c...
+
+2025-05-08 11:56:34.982 | RK:  | [MOZART] 2025-05-08 11:56:34 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: e1949b73-9542-4846-bcfa-9b2d5b58f34c...
+
+2025-05-08 11:56:34.984 | RK:  | [MOZART] 2025-05-08 11:56:34 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: e1949b73-9542-4846-bcfa-9b2d5b58f34c...
+
+2025-05-08 11:56:34.988 | RK:  | [MOZART] 2025-05-08 11:56:34 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: e1949b73-9542-4846-bcfa-9b2d5b58f34c...
+
+2025-05-08 11:56:34.992 | RK:  | [MOZART] 2025-05-08 11:56:34 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:56:34.965694800, lieferstatus=PROCESSING}...
+
+2025-05-08 11:56:34.993 | RK:  | [MOZART] 2025-05-08 11:56:34 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:56:34.965694800, lieferstatus=PROCESSING}...
+
+2025-05-08 11:56:34.995 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:34 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"e1949b73-9542-4846-bcfa-9b2d5b58f34c\",\"kundenId\":\"KundenID-883\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@beispiel.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 11:56:34.996 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:34 DEBUG [ECommerceListener] New order e1949b73-9542-4846-bcfa-9b2d5b58f34c added for customer KundenID-883. Initial status from DTO will be applied."
+2025-05-08 11:56:34.996 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:34 DEBUG [ECommerceListener] Bestellung e1949b73-9542-4846-bcfa-9b2d5b58f34c status updated to 1"
+2025-05-08 11:56:34.996 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:34 DEBUG [ECommerceListener] Bestellung e1949b73-9542-4846-bcfa-9b2d5b58f34c updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 11:56:41.655 | RK:  | [MOZART] 2025-05-08 11:56:41 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:56:41.656 | RK:  | [MOZART] 2025-05-08 11:56:41 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:56:41.657 | RK:  | [MOZART] 2025-05-08 11:56:41 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:56:41.668 | RK:  | [BEETHOVEN] 2025-05-08 11:56:41 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:56:41.670 | RK:  | [BEETHOVEN] 2025-05-08 11:56:41 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 190.
+
+2025-05-08 11:56:41.671 | RK:  | [BEETHOVEN] 2025-05-08 11:56:41 INFO  ErpOrderService: Bestellabwicklung mit ID d447241d-b972-4b40-9fbc-a99f2ae5b961 im Repository gespeichert.
+
+2025-05-08 11:56:41.673 | RK:  | [BEETHOVEN] 2025-05-08 11:56:41 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: d447241d-b972-4b40-9fbc-a99f2ae5b961
+
+2025-05-08 11:56:41.675 | RK:  | [MOZART] 2025-05-08 11:56:41 INFO  BestellungService: Erstelle Bestellung mit Order ID: d447241d-b972-4b40-9fbc-a99f2ae5b961...
+
+2025-05-08 11:56:41.676 | RK:  | [MOZART] 2025-05-08 11:56:41 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: d447241d-b972-4b40-9fbc-a99f2ae5b961...
+
+2025-05-08 11:56:41.678 | RK:  | [MOZART] 2025-05-08 11:56:41 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: d447241d-b972-4b40-9fbc-a99f2ae5b961...
+
+2025-05-08 11:56:41.681 | RK:  | [MOZART] 2025-05-08 11:56:41 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: d447241d-b972-4b40-9fbc-a99f2ae5b961...
+
+2025-05-08 11:56:41.683 | RK:  | [MOZART] 2025-05-08 11:56:41 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:56:41.661327800, lieferstatus=PROCESSING}...
+
+2025-05-08 11:56:41.685 | RK:  | [MOZART] 2025-05-08 11:56:41 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:56:41.661327800, lieferstatus=PROCESSING}...
+
+2025-05-08 11:56:41.687 | RK:  | "[SCHUHMACHER] 2025-05-08 11:56:41 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 11:59:40.289 | RK:  | "[SCHUHMACHER] 2025-05-08 11:59:40 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 11:59:40.291 | RK:  | "[SCHUHMACHER] 2025-05-08 11:59:40 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 11:59:40.291 | RK:  | "[SCHUHMACHER] 2025-05-08 11:59:40 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 11:59:40.291 | RK:  | "[SCHUHMACHER] 2025-05-08 11:59:40 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 11:59:40.292 | RK:  | "[SCHUHMACHER] 2025-05-08 11:59:40 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 11:59:40.376 | RK:  | "[SCHUHMACHER] 2025-05-08 11:59:40 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 11:59:43.684 | RK:  | [MOZART] 2025-05-08 11:59:43 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:59:43.687 | RK:  | [MOZART] 2025-05-08 11:59:43 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:59:43.688 | RK:  | [MOZART] 2025-05-08 11:59:43 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:59:43.696 | RK:  | [BEETHOVEN] 2025-05-08 11:59:43 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:59:43.697 | RK:  | [BEETHOVEN] 2025-05-08 11:59:43 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 186.
+
+2025-05-08 11:59:43.699 | RK:  | [BEETHOVEN] 2025-05-08 11:59:43 INFO  ErpOrderService: Bestellabwicklung mit ID a87a88d9-e273-4d11-a186-6f23084464dc im Repository gespeichert.
+
+2025-05-08 11:59:43.706 | RK:  | [BEETHOVEN] 2025-05-08 11:59:43 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: a87a88d9-e273-4d11-a186-6f23084464dc
+
+2025-05-08 11:59:43.711 | RK:  | [MOZART] 2025-05-08 11:59:43 INFO  BestellungService: Erstelle Bestellung mit Order ID: a87a88d9-e273-4d11-a186-6f23084464dc...
+
+2025-05-08 11:59:43.711 | RK:  | [MOZART] 2025-05-08 11:59:43 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: a87a88d9-e273-4d11-a186-6f23084464dc...
+
+2025-05-08 11:59:43.712 | RK:  | [MOZART] 2025-05-08 11:59:43 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: a87a88d9-e273-4d11-a186-6f23084464dc...
+
+2025-05-08 11:59:43.715 | RK:  | [MOZART] 2025-05-08 11:59:43 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: a87a88d9-e273-4d11-a186-6f23084464dc...
+
+2025-05-08 11:59:43.716 | RK:  | [MOZART] 2025-05-08 11:59:43 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:59:43.693065700, lieferstatus=PROCESSING}...
+
+2025-05-08 11:59:43.719 | RK:  | [MOZART] 2025-05-08 11:59:43 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:59:43.693065700, lieferstatus=PROCESSING}...
+
+2025-05-08 11:59:43.725 | RK:  | "[SCHUHMACHER] 2025-05-08 11:59:43 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"a87a88d9-e273-4d11-a186-6f23084464dc\",\"kundenId\":\"KundenID-883\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@beispiel.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 11:59:43.726 | RK:  | "[SCHUHMACHER] 2025-05-08 11:59:43 DEBUG [ECommerceListener] New customer added with ID: KundenID-883"
+2025-05-08 11:59:43.727 | RK:  | "[SCHUHMACHER] 2025-05-08 11:59:43 DEBUG [ECommerceListener] New order a87a88d9-e273-4d11-a186-6f23084464dc added for customer KundenID-883. Initial status from DTO will be applied."
+2025-05-08 11:59:43.727 | RK:  | "[SCHUHMACHER] 2025-05-08 11:59:43 DEBUG [ECommerceListener] Bestellung a87a88d9-e273-4d11-a186-6f23084464dc status updated to 1"
+2025-05-08 11:59:43.727 | RK:  | "[SCHUHMACHER] 2025-05-08 11:59:43 DEBUG [ECommerceListener] Bestellung a87a88d9-e273-4d11-a186-6f23084464dc updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 11:59:46.510 | RK:  | [MOZART] 2025-05-08 11:59:46 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:59:46.515 | RK:  | [MOZART] 2025-05-08 11:59:46 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 11:59:46.516 | RK:  | [MOZART] 2025-05-08 11:59:46 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 11:59:46.520 | RK:  | [BEETHOVEN] 2025-05-08 11:59:46 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 11:59:46.520 | RK:  | [BEETHOVEN] 2025-05-08 11:59:46 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 182.
+
+2025-05-08 11:59:46.521 | RK:  | [BEETHOVEN] 2025-05-08 11:59:46 INFO  ErpOrderService: Bestellabwicklung mit ID c7d77ea2-4f18-41b7-86aa-483abf4bde92 im Repository gespeichert.
+
+2025-05-08 11:59:46.523 | RK:  | [BEETHOVEN] 2025-05-08 11:59:46 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: c7d77ea2-4f18-41b7-86aa-483abf4bde92
+
+2025-05-08 11:59:46.527 | RK:  | [MOZART] 2025-05-08 11:59:46 INFO  BestellungService: Erstelle Bestellung mit Order ID: c7d77ea2-4f18-41b7-86aa-483abf4bde92...
+
+2025-05-08 11:59:46.530 | RK:  | [MOZART] 2025-05-08 11:59:46 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: c7d77ea2-4f18-41b7-86aa-483abf4bde92...
+
+2025-05-08 11:59:46.531 | RK:  | [MOZART] 2025-05-08 11:59:46 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: c7d77ea2-4f18-41b7-86aa-483abf4bde92...
+
+2025-05-08 11:59:46.534 | RK:  | [MOZART] 2025-05-08 11:59:46 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: c7d77ea2-4f18-41b7-86aa-483abf4bde92...
+
+2025-05-08 11:59:46.535 | RK:  | [MOZART] 2025-05-08 11:59:46 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T11:59:46.516837, lieferstatus=PROCESSING}...
+
+2025-05-08 11:59:46.535 | RK:  | [MOZART] 2025-05-08 11:59:46 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T11:59:46.516837, lieferstatus=PROCESSING}...
+
+2025-05-08 11:59:46.537 | RK:  | "[SCHUHMACHER] 2025-05-08 11:59:46 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 12:04:12.849 | RK:  | "[SCHUHMACHER] 2025-05-08 12:04:12 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 12:04:12.854 | RK:  | "[SCHUHMACHER] 2025-05-08 12:04:12 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 12:04:12.855 | RK:  | "[SCHUHMACHER] 2025-05-08 12:04:12 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 12:04:12.856 | RK:  | "[SCHUHMACHER] 2025-05-08 12:04:12 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 12:04:12.856 | RK:  | "[SCHUHMACHER] 2025-05-08 12:04:12 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 12:04:12.942 | RK:  | "[SCHUHMACHER] 2025-05-08 12:04:12 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 12:04:18.045 | RK:  | [MOZART] 2025-05-08 12:04:18 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:04:18.045 | RK:  | [MOZART] 2025-05-08 12:04:18 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:04:18.047 | RK:  | [MOZART] 2025-05-08 12:04:18 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 12:04:18.052 | RK:  | [BEETHOVEN] 2025-05-08 12:04:18 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 12:04:18.054 | RK:  | [BEETHOVEN] 2025-05-08 12:04:18 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 178.
+
+2025-05-08 12:04:18.056 | RK:  | [BEETHOVEN] 2025-05-08 12:04:18 INFO  ErpOrderService: Bestellabwicklung mit ID d335d88f-336f-48d7-9cbd-82e4fa058e7f im Repository gespeichert.
+
+2025-05-08 12:04:18.061 | RK:  | [BEETHOVEN] 2025-05-08 12:04:18 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: d335d88f-336f-48d7-9cbd-82e4fa058e7f
+
+2025-05-08 12:04:18.062 | RK:  | [MOZART] 2025-05-08 12:04:18 INFO  BestellungService: Erstelle Bestellung mit Order ID: d335d88f-336f-48d7-9cbd-82e4fa058e7f...
+
+2025-05-08 12:04:18.063 | RK:  | [MOZART] 2025-05-08 12:04:18 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: d335d88f-336f-48d7-9cbd-82e4fa058e7f...
+
+2025-05-08 12:04:18.064 | RK:  | [MOZART] 2025-05-08 12:04:18 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: d335d88f-336f-48d7-9cbd-82e4fa058e7f...
+
+2025-05-08 12:04:18.064 | RK:  | [MOZART] 2025-05-08 12:04:18 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: d335d88f-336f-48d7-9cbd-82e4fa058e7f...
+
+2025-05-08 12:04:18.065 | RK:  | [MOZART] 2025-05-08 12:04:18 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:04:18.052055700, lieferstatus=PROCESSING}...
+
+2025-05-08 12:04:18.066 | RK:  | [MOZART] 2025-05-08 12:04:18 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:04:18.052055700, lieferstatus=PROCESSING}...
+
+2025-05-08 12:04:18.074 | RK:  | "[SCHUHMACHER] 2025-05-08 12:04:18 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"d335d88f-336f-48d7-9cbd-82e4fa058e7f\",\"kundenId\":\"KundenID-883\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@beispiel.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 12:04:18.074 | RK:  | "[SCHUHMACHER] 2025-05-08 12:04:18 DEBUG [ECommerceListener] New customer added with ID: KundenID-883"
+2025-05-08 12:04:18.075 | RK:  | "[SCHUHMACHER] 2025-05-08 12:04:18 DEBUG [ECommerceListener] New order d335d88f-336f-48d7-9cbd-82e4fa058e7f added for customer KundenID-883. Initial status from DTO will be applied."
+2025-05-08 12:04:18.075 | RK:  | "[SCHUHMACHER] 2025-05-08 12:04:18 DEBUG [ECommerceListener] Bestellung d335d88f-336f-48d7-9cbd-82e4fa058e7f status updated to 1"
+2025-05-08 12:04:18.075 | RK:  | "[SCHUHMACHER] 2025-05-08 12:04:18 DEBUG [ECommerceListener] Bestellung d335d88f-336f-48d7-9cbd-82e4fa058e7f updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 12:04:21.470 | RK:  | [MOZART] 2025-05-08 12:04:21 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:04:21.471 | RK:  | [MOZART] 2025-05-08 12:04:21 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:04:21.474 | RK:  | [MOZART] 2025-05-08 12:04:21 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 12:04:21.478 | RK:  | [BEETHOVEN] 2025-05-08 12:04:21 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 12:04:21.479 | RK:  | [BEETHOVEN] 2025-05-08 12:04:21 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 174.
+
+2025-05-08 12:04:21.482 | RK:  | [BEETHOVEN] 2025-05-08 12:04:21 INFO  ErpOrderService: Bestellabwicklung mit ID d28c3ea9-6dc1-4262-a459-8653e9e08be2 im Repository gespeichert.
+
+2025-05-08 12:04:21.489 | RK:  | [BEETHOVEN] 2025-05-08 12:04:21 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: d28c3ea9-6dc1-4262-a459-8653e9e08be2
+
+2025-05-08 12:04:21.489 | RK:  | [MOZART] 2025-05-08 12:04:21 INFO  BestellungService: Erstelle Bestellung mit Order ID: d28c3ea9-6dc1-4262-a459-8653e9e08be2...
+
+2025-05-08 12:04:21.493 | RK:  | [MOZART] 2025-05-08 12:04:21 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: d28c3ea9-6dc1-4262-a459-8653e9e08be2...
+
+2025-05-08 12:04:21.493 | RK:  | [MOZART] 2025-05-08 12:04:21 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: d28c3ea9-6dc1-4262-a459-8653e9e08be2...
+
+2025-05-08 12:04:21.494 | RK:  | [MOZART] 2025-05-08 12:04:21 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: d28c3ea9-6dc1-4262-a459-8653e9e08be2...
+
+2025-05-08 12:04:21.496 | RK:  | [MOZART] 2025-05-08 12:04:21 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:04:21.475790300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:04:21.496 | RK:  | [MOZART] 2025-05-08 12:04:21 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:04:21.475790300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:04:21.501 | RK:  | "[SCHUHMACHER] 2025-05-08 12:04:21 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 12:06:16.071 | RK:  | [MOZART] 2025-05-08 12:06:16 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:06:16.072 | RK:  | [MOZART] 2025-05-08 12:06:16 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-883, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:06:16.073 | RK:  | [MOZART] 2025-05-08 12:06:16 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 12:06:16.077 | RK:  | [BEETHOVEN] 2025-05-08 12:06:16 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 12:06:16.077 | RK:  | [BEETHOVEN] 2025-05-08 12:06:16 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 170.
+
+2025-05-08 12:06:16.077 | RK:  | [BEETHOVEN] 2025-05-08 12:06:16 INFO  ErpOrderService: Bestellabwicklung mit ID 12a48044-84df-41da-9f76-3e1e22ad202b im Repository gespeichert.
+
+2025-05-08 12:06:16.083 | RK:  | [BEETHOVEN] 2025-05-08 12:06:16 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 12a48044-84df-41da-9f76-3e1e22ad202b
+
+2025-05-08 12:06:16.087 | RK:  | [MOZART] 2025-05-08 12:06:16 INFO  BestellungService: Erstelle Bestellung mit Order ID: 12a48044-84df-41da-9f76-3e1e22ad202b...
+
+2025-05-08 12:06:16.087 | RK:  | [MOZART] 2025-05-08 12:06:16 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 12a48044-84df-41da-9f76-3e1e22ad202b...
+
+2025-05-08 12:06:16.087 | RK:  | [MOZART] 2025-05-08 12:06:16 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 12a48044-84df-41da-9f76-3e1e22ad202b...
+
+2025-05-08 12:06:16.089 | RK:  | [MOZART] 2025-05-08 12:06:16 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 12a48044-84df-41da-9f76-3e1e22ad202b...
+
+2025-05-08 12:06:16.090 | RK:  | [MOZART] 2025-05-08 12:06:16 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:06:16.074483600, lieferstatus=PROCESSING}...
+
+2025-05-08 12:06:16.090 | RK:  | [MOZART] 2025-05-08 12:06:16 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:06:16.074483600, lieferstatus=PROCESSING}...
+
+2025-05-08 12:06:16.093 | RK:  | "[SCHUHMACHER] 2025-05-08 12:06:16 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"12a48044-84df-41da-9f76-3e1e22ad202b\",\"kundenId\":\"KundenID-883\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@beispiel.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 12:06:16.094 | RK:  | "[SCHUHMACHER] 2025-05-08 12:06:16 DEBUG [ECommerceListener] New order 12a48044-84df-41da-9f76-3e1e22ad202b added for customer KundenID-883. Initial status from DTO will be applied."
+2025-05-08 12:06:16.094 | RK:  | "[SCHUHMACHER] 2025-05-08 12:06:16 DEBUG [ECommerceListener] Bestellung 12a48044-84df-41da-9f76-3e1e22ad202b status updated to 1"
+2025-05-08 12:06:16.094 | RK:  | "[SCHUHMACHER] 2025-05-08 12:06:16 DEBUG [ECommerceListener] Bestellung 12a48044-84df-41da-9f76-3e1e22ad202b updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 12:06:35.640 | RK:  | [MOZART] 2025-05-08 12:06:35 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:06:35.641 | RK:  | [MOZART] 2025-05-08 12:06:35 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@beispiel.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:06:35.642 | RK:  | [MOZART] 2025-05-08 12:06:35 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 12:06:35.648 | RK:  | [BEETHOVEN] 2025-05-08 12:06:35 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 12:06:35.649 | RK:  | [BEETHOVEN] 2025-05-08 12:06:35 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 166.
+
+2025-05-08 12:06:35.651 | RK:  | [BEETHOVEN] 2025-05-08 12:06:35 INFO  ErpOrderService: Bestellabwicklung mit ID 31801bd0-1acd-407f-b4e9-3917fd2c43e5 im Repository gespeichert.
+
+2025-05-08 12:06:35.653 | RK:  | [BEETHOVEN] 2025-05-08 12:06:35 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 31801bd0-1acd-407f-b4e9-3917fd2c43e5
+
+2025-05-08 12:06:35.654 | RK:  | [MOZART] 2025-05-08 12:06:35 INFO  BestellungService: Erstelle Bestellung mit Order ID: 31801bd0-1acd-407f-b4e9-3917fd2c43e5...
+
+2025-05-08 12:06:35.655 | RK:  | [MOZART] 2025-05-08 12:06:35 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 31801bd0-1acd-407f-b4e9-3917fd2c43e5...
+
+2025-05-08 12:06:35.655 | RK:  | [MOZART] 2025-05-08 12:06:35 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 31801bd0-1acd-407f-b4e9-3917fd2c43e5...
+
+2025-05-08 12:06:35.656 | RK:  | [MOZART] 2025-05-08 12:06:35 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 31801bd0-1acd-407f-b4e9-3917fd2c43e5...
+
+2025-05-08 12:06:35.657 | RK:  | [MOZART] 2025-05-08 12:06:35 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:06:35.645359300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:06:35.661 | RK:  | [MOZART] 2025-05-08 12:06:35 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:06:35.645359300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:06:35.663 | RK:  | "[SCHUHMACHER] 2025-05-08 12:06:35 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 12:06:43.591 | RK:  | [MOZART] 2025-05-08 12:06:43 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:06:43.592 | RK:  | [MOZART] 2025-05-08 12:06:43 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:06:43.594 | RK:  | [MOZART] 2025-05-08 12:06:43 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 12:06:43.600 | RK:  | [BEETHOVEN] 2025-05-08 12:06:43 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 12:06:43.601 | RK:  | [BEETHOVEN] 2025-05-08 12:06:43 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 162.
+
+2025-05-08 12:06:43.602 | RK:  | [BEETHOVEN] 2025-05-08 12:06:43 INFO  ErpOrderService: Bestellabwicklung mit ID 4659a478-3dc3-477e-9a66-51af706ce438 im Repository gespeichert.
+
+2025-05-08 12:06:43.605 | RK:  | [BEETHOVEN] 2025-05-08 12:06:43 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 4659a478-3dc3-477e-9a66-51af706ce438
+
+2025-05-08 12:06:43.608 | RK:  | [MOZART] 2025-05-08 12:06:43 INFO  BestellungService: Erstelle Bestellung mit Order ID: 4659a478-3dc3-477e-9a66-51af706ce438...
+
+2025-05-08 12:06:43.608 | RK:  | [MOZART] 2025-05-08 12:06:43 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 4659a478-3dc3-477e-9a66-51af706ce438...
+
+2025-05-08 12:06:43.608 | RK:  | [MOZART] 2025-05-08 12:06:43 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 4659a478-3dc3-477e-9a66-51af706ce438...
+
+2025-05-08 12:06:43.609 | RK:  | [MOZART] 2025-05-08 12:06:43 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 4659a478-3dc3-477e-9a66-51af706ce438...
+
+2025-05-08 12:06:43.611 | RK:  | [MOZART] 2025-05-08 12:06:43 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:06:43.598002700, lieferstatus=PROCESSING}...
+
+2025-05-08 12:06:43.612 | RK:  | [MOZART] 2025-05-08 12:06:43 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:06:43.598002700, lieferstatus=PROCESSING}...
+
+2025-05-08 12:06:43.614 | RK:  | "[SCHUHMACHER] 2025-05-08 12:06:43 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"4659a478-3dc3-477e-9a66-51af706ce438\",\"kundenId\":\"KundenID-123\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@324.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 12:06:43.615 | RK:  | "[SCHUHMACHER] 2025-05-08 12:06:43 DEBUG [ECommerceListener] New customer added with ID: KundenID-123"
+2025-05-08 12:06:43.615 | RK:  | "[SCHUHMACHER] 2025-05-08 12:06:43 DEBUG [ECommerceListener] New order 4659a478-3dc3-477e-9a66-51af706ce438 added for customer KundenID-123. Initial status from DTO will be applied."
+2025-05-08 12:06:43.615 | RK:  | "[SCHUHMACHER] 2025-05-08 12:06:43 DEBUG [ECommerceListener] Bestellung 4659a478-3dc3-477e-9a66-51af706ce438 status updated to 1"
+2025-05-08 12:06:43.615 | RK:  | "[SCHUHMACHER] 2025-05-08 12:06:43 DEBUG [ECommerceListener] Bestellung 4659a478-3dc3-477e-9a66-51af706ce438 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 12:13:17.087 | RK:  | "[SCHUHMACHER] 2025-05-08 12:13:16 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 12:13:17.094 | RK:  | "[SCHUHMACHER] 2025-05-08 12:13:16 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 12:13:17.096 | RK:  | "[SCHUHMACHER] 2025-05-08 12:13:16 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 12:13:17.097 | RK:  | "[SCHUHMACHER] 2025-05-08 12:13:17 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 12:13:17.098 | RK:  | "[SCHUHMACHER] 2025-05-08 12:13:17 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 12:13:17.181 | RK:  | "[SCHUHMACHER] 2025-05-08 12:13:17 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 12:13:56.368 | RK:  | [MOZART] 2025-05-08 12:13:56 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:13:56.369 | RK:  | [MOZART] 2025-05-08 12:13:56 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:13:56.370 | RK:  | [MOZART] 2025-05-08 12:13:56 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 12:13:56.381 | RK:  | [BEETHOVEN] 2025-05-08 12:13:56 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 12:13:56.381 | RK:  | [BEETHOVEN] 2025-05-08 12:13:56 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 158.
+
+2025-05-08 12:13:56.383 | RK:  | [BEETHOVEN] 2025-05-08 12:13:56 INFO  ErpOrderService: Bestellabwicklung mit ID e49b36f4-2ef9-4d49-89c4-ad78ddeda7b8 im Repository gespeichert.
+
+2025-05-08 12:13:56.389 | RK:  | [BEETHOVEN] 2025-05-08 12:13:56 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: e49b36f4-2ef9-4d49-89c4-ad78ddeda7b8
+
+2025-05-08 12:13:56.393 | RK:  | [MOZART] 2025-05-08 12:13:56 INFO  BestellungService: Erstelle Bestellung mit Order ID: e49b36f4-2ef9-4d49-89c4-ad78ddeda7b8...
+
+2025-05-08 12:13:56.393 | RK:  | [MOZART] 2025-05-08 12:13:56 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: e49b36f4-2ef9-4d49-89c4-ad78ddeda7b8...
+
+2025-05-08 12:13:56.394 | RK:  | [MOZART] 2025-05-08 12:13:56 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: e49b36f4-2ef9-4d49-89c4-ad78ddeda7b8...
+
+2025-05-08 12:13:56.395 | RK:  | [MOZART] 2025-05-08 12:13:56 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: e49b36f4-2ef9-4d49-89c4-ad78ddeda7b8...
+
+2025-05-08 12:13:56.396 | RK:  | [MOZART] 2025-05-08 12:13:56 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:13:56.377797900, lieferstatus=PROCESSING}...
+
+2025-05-08 12:13:56.396 | RK:  | [MOZART] 2025-05-08 12:13:56 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:13:56.377797900, lieferstatus=PROCESSING}...
+
+2025-05-08 12:13:56.407 | RK:  | "[SCHUHMACHER] 2025-05-08 12:13:56 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"e49b36f4-2ef9-4d49-89c4-ad78ddeda7b8\",\"kundenId\":\"KundenID-123\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@324.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 12:13:56.408 | RK:  | "[SCHUHMACHER] 2025-05-08 12:13:56 DEBUG [ECommerceListener] New customer added with ID: KundenID-123"
+2025-05-08 12:13:56.408 | RK:  | "[SCHUHMACHER] 2025-05-08 12:13:56 DEBUG [ECommerceListener] New order e49b36f4-2ef9-4d49-89c4-ad78ddeda7b8 added for customer KundenID-123. Initial status from DTO will be applied."
+2025-05-08 12:13:56.408 | RK:  | "[SCHUHMACHER] 2025-05-08 12:13:56 DEBUG [ECommerceListener] Bestellung e49b36f4-2ef9-4d49-89c4-ad78ddeda7b8 status updated to 1"
+2025-05-08 12:13:56.408 | RK:  | "[SCHUHMACHER] 2025-05-08 12:13:56 DEBUG [ECommerceListener] Bestellung e49b36f4-2ef9-4d49-89c4-ad78ddeda7b8 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 12:14:02.023 | RK:  | [MOZART] 2025-05-08 12:14:02 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:14:02.024 | RK:  | [MOZART] 2025-05-08 12:14:02 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:14:02.024 | RK:  | [MOZART] 2025-05-08 12:14:02 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 12:14:02.029 | RK:  | [BEETHOVEN] 2025-05-08 12:14:02 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 12:14:02.030 | RK:  | [BEETHOVEN] 2025-05-08 12:14:02 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 154.
+
+2025-05-08 12:14:02.031 | RK:  | [BEETHOVEN] 2025-05-08 12:14:02 INFO  ErpOrderService: Bestellabwicklung mit ID 801d9d05-fc52-45a1-acf2-1bebfcfb778a im Repository gespeichert.
+
+2025-05-08 12:14:02.032 | RK:  | [BEETHOVEN] 2025-05-08 12:14:02 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 801d9d05-fc52-45a1-acf2-1bebfcfb778a
+
+2025-05-08 12:14:02.034 | RK:  | [MOZART] 2025-05-08 12:14:02 INFO  BestellungService: Erstelle Bestellung mit Order ID: 801d9d05-fc52-45a1-acf2-1bebfcfb778a...
+
+2025-05-08 12:14:02.035 | RK:  | [MOZART] 2025-05-08 12:14:02 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 801d9d05-fc52-45a1-acf2-1bebfcfb778a...
+
+2025-05-08 12:14:02.036 | RK:  | [MOZART] 2025-05-08 12:14:02 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 801d9d05-fc52-45a1-acf2-1bebfcfb778a...
+
+2025-05-08 12:14:02.038 | RK:  | [MOZART] 2025-05-08 12:14:02 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 801d9d05-fc52-45a1-acf2-1bebfcfb778a...
+
+2025-05-08 12:14:02.039 | RK:  | [MOZART] 2025-05-08 12:14:02 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:14:02.026588600, lieferstatus=PROCESSING}...
+
+2025-05-08 12:14:02.041 | RK:  | [MOZART] 2025-05-08 12:14:02 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:14:02.026588600, lieferstatus=PROCESSING}...
+
+2025-05-08 12:14:02.045 | RK:  | "[SCHUHMACHER] 2025-05-08 12:14:02 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 12:14:54.069 | RK:  | "[SCHUHMACHER] 2025-05-08 12:14:53 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 12:14:54.070 | RK:  | "[SCHUHMACHER] 2025-05-08 12:14:53 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 12:14:54.072 | RK:  | "[SCHUHMACHER] 2025-05-08 12:14:53 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 12:14:54.072 | RK:  | "[SCHUHMACHER] 2025-05-08 12:14:54 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 12:14:54.072 | RK:  | "[SCHUHMACHER] 2025-05-08 12:14:54 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 12:14:54.145 | RK:  | "[SCHUHMACHER] 2025-05-08 12:14:54 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 12:15:01.531 | RK:  | [MOZART] 2025-05-08 12:15:01 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:15:01.531 | RK:  | [MOZART] 2025-05-08 12:15:01 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:15:01.532 | RK:  | [MOZART] 2025-05-08 12:15:01 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 12:15:01.536 | RK:  | [BEETHOVEN] 2025-05-08 12:15:01 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 12:15:01.537 | RK:  | [BEETHOVEN] 2025-05-08 12:15:01 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 150.
+
+2025-05-08 12:15:01.538 | RK:  | [BEETHOVEN] 2025-05-08 12:15:01 INFO  ErpOrderService: Bestellabwicklung mit ID c8e8be8f-6199-48b7-b917-6a913b9207ab im Repository gespeichert.
+
+2025-05-08 12:15:01.538 | RK:  | [BEETHOVEN] 2025-05-08 12:15:01 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: c8e8be8f-6199-48b7-b917-6a913b9207ab
+
+2025-05-08 12:15:01.539 | RK:  | [MOZART] 2025-05-08 12:15:01 INFO  BestellungService: Erstelle Bestellung mit Order ID: c8e8be8f-6199-48b7-b917-6a913b9207ab...
+
+2025-05-08 12:15:01.540 | RK:  | [MOZART] 2025-05-08 12:15:01 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: c8e8be8f-6199-48b7-b917-6a913b9207ab...
+
+2025-05-08 12:15:01.540 | RK:  | [MOZART] 2025-05-08 12:15:01 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: c8e8be8f-6199-48b7-b917-6a913b9207ab...
+
+2025-05-08 12:15:01.542 | RK:  | [MOZART] 2025-05-08 12:15:01 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: c8e8be8f-6199-48b7-b917-6a913b9207ab...
+
+2025-05-08 12:15:01.543 | RK:  | [MOZART] 2025-05-08 12:15:01 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:15:01.534915100, lieferstatus=PROCESSING}...
+
+2025-05-08 12:15:01.545 | RK:  | [MOZART] 2025-05-08 12:15:01 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:15:01.534915100, lieferstatus=PROCESSING}...
+
+2025-05-08 12:15:01.550 | RK:  | "[SCHUHMACHER] 2025-05-08 12:15:01 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"c8e8be8f-6199-48b7-b917-6a913b9207ab\",\"kundenId\":\"KundenID-123\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@324.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 12:15:01.550 | RK:  | "[SCHUHMACHER] 2025-05-08 12:15:01 DEBUG [ECommerceListener] New customer added with ID: KundenID-123"
+2025-05-08 12:15:01.551 | RK:  | "[SCHUHMACHER] 2025-05-08 12:15:01 DEBUG [ECommerceListener] New order c8e8be8f-6199-48b7-b917-6a913b9207ab added for customer KundenID-123. Initial status from DTO will be applied."
+2025-05-08 12:15:01.551 | RK:  | "[SCHUHMACHER] 2025-05-08 12:15:01 DEBUG [ECommerceListener] Bestellung c8e8be8f-6199-48b7-b917-6a913b9207ab status updated to 1"
+2025-05-08 12:15:01.551 | RK:  | "[SCHUHMACHER] 2025-05-08 12:15:01 DEBUG [ECommerceListener] Bestellung c8e8be8f-6199-48b7-b917-6a913b9207ab updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 12:15:06.791 | RK:  | [MOZART] 2025-05-08 12:15:06 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:15:06.792 | RK:  | [MOZART] 2025-05-08 12:15:06 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:15:06.792 | RK:  | [MOZART] 2025-05-08 12:15:06 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 12:15:06.797 | RK:  | [BEETHOVEN] 2025-05-08 12:15:06 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 12:15:06.798 | RK:  | [BEETHOVEN] 2025-05-08 12:15:06 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 146.
+
+2025-05-08 12:15:06.799 | RK:  | [BEETHOVEN] 2025-05-08 12:15:06 INFO  ErpOrderService: Bestellabwicklung mit ID fbea30db-450d-47b3-98cc-a7023481d281 im Repository gespeichert.
+
+2025-05-08 12:15:06.800 | RK:  | [BEETHOVEN] 2025-05-08 12:15:06 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: fbea30db-450d-47b3-98cc-a7023481d281
+
+2025-05-08 12:15:06.802 | RK:  | [MOZART] 2025-05-08 12:15:06 INFO  BestellungService: Erstelle Bestellung mit Order ID: fbea30db-450d-47b3-98cc-a7023481d281...
+
+2025-05-08 12:15:06.802 | RK:  | [MOZART] 2025-05-08 12:15:06 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: fbea30db-450d-47b3-98cc-a7023481d281...
+
+2025-05-08 12:15:06.804 | RK:  | [MOZART] 2025-05-08 12:15:06 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: fbea30db-450d-47b3-98cc-a7023481d281...
+
+2025-05-08 12:15:06.806 | RK:  | [MOZART] 2025-05-08 12:15:06 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: fbea30db-450d-47b3-98cc-a7023481d281...
+
+2025-05-08 12:15:06.806 | RK:  | [MOZART] 2025-05-08 12:15:06 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:15:06.793272700, lieferstatus=PROCESSING}...
+
+2025-05-08 12:15:06.806 | RK:  | [MOZART] 2025-05-08 12:15:06 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:15:06.793272700, lieferstatus=PROCESSING}...
+
+2025-05-08 12:15:06.807 | RK:  | "[SCHUHMACHER] 2025-05-08 12:15:06 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 12:16:18.546 | RK:  | "[SCHUHMACHER] 2025-05-08 12:16:18 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 12:16:18.549 | RK:  | "[SCHUHMACHER] 2025-05-08 12:16:18 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 12:16:18.550 | RK:  | "[SCHUHMACHER] 2025-05-08 12:16:18 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 12:16:18.550 | RK:  | "[SCHUHMACHER] 2025-05-08 12:16:18 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 12:16:18.550 | RK:  | "[SCHUHMACHER] 2025-05-08 12:16:18 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 12:16:18.635 | RK:  | "[SCHUHMACHER] 2025-05-08 12:16:18 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 12:16:20.077 | RK:  | [MOZART] 2025-05-08 12:16:20 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:16:20.078 | RK:  | [MOZART] 2025-05-08 12:16:20 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:16:20.080 | RK:  | [MOZART] 2025-05-08 12:16:20 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 12:16:20.092 | RK:  | [BEETHOVEN] 2025-05-08 12:16:20 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 12:16:20.094 | RK:  | [BEETHOVEN] 2025-05-08 12:16:20 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 142.
+
+2025-05-08 12:16:20.097 | RK:  | [BEETHOVEN] 2025-05-08 12:16:20 INFO  ErpOrderService: Bestellabwicklung mit ID 64db3276-10d2-4336-bc7d-07dd29b089bf im Repository gespeichert.
+
+2025-05-08 12:16:20.105 | RK:  | [BEETHOVEN] 2025-05-08 12:16:20 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 64db3276-10d2-4336-bc7d-07dd29b089bf
+
+2025-05-08 12:16:20.107 | RK:  | [MOZART] 2025-05-08 12:16:20 INFO  BestellungService: Erstelle Bestellung mit Order ID: 64db3276-10d2-4336-bc7d-07dd29b089bf...
+
+2025-05-08 12:16:20.109 | RK:  | [MOZART] 2025-05-08 12:16:20 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 64db3276-10d2-4336-bc7d-07dd29b089bf...
+
+2025-05-08 12:16:20.110 | RK:  | [MOZART] 2025-05-08 12:16:20 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 64db3276-10d2-4336-bc7d-07dd29b089bf...
+
+2025-05-08 12:16:20.111 | RK:  | [MOZART] 2025-05-08 12:16:20 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 64db3276-10d2-4336-bc7d-07dd29b089bf...
+
+2025-05-08 12:16:20.115 | RK:  | [MOZART] 2025-05-08 12:16:20 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:16:20.089244400, lieferstatus=PROCESSING}...
+
+2025-05-08 12:16:20.115 | RK:  | [MOZART] 2025-05-08 12:16:20 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:16:20.089244400, lieferstatus=PROCESSING}...
+
+2025-05-08 12:16:20.125 | RK:  | "[SCHUHMACHER] 2025-05-08 12:16:20 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"64db3276-10d2-4336-bc7d-07dd29b089bf\",\"kundenId\":\"KundenID-123\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@324.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 12:16:20.126 | RK:  | "[SCHUHMACHER] 2025-05-08 12:16:20 DEBUG [ECommerceListener] New customer added with ID: KundenID-123"
+2025-05-08 12:16:20.126 | RK:  | "[SCHUHMACHER] 2025-05-08 12:16:20 DEBUG [ECommerceListener] New order 64db3276-10d2-4336-bc7d-07dd29b089bf added for customer KundenID-123. Initial status from DTO will be applied."
+2025-05-08 12:16:20.126 | RK:  | "[SCHUHMACHER] 2025-05-08 12:16:20 DEBUG [ECommerceListener] Bestellung 64db3276-10d2-4336-bc7d-07dd29b089bf status updated to 1"
+2025-05-08 12:16:20.127 | RK:  | "[SCHUHMACHER] 2025-05-08 12:16:20 DEBUG [ECommerceListener] Bestellung 64db3276-10d2-4336-bc7d-07dd29b089bf updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 12:16:26.608 | RK:  | [MOZART] 2025-05-08 12:16:26 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:16:26.609 | RK:  | [MOZART] 2025-05-08 12:16:26 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:16:26.610 | RK:  | [MOZART] 2025-05-08 12:16:26 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 12:16:26.613 | RK:  | [BEETHOVEN] 2025-05-08 12:16:26 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 12:16:26.614 | RK:  | [BEETHOVEN] 2025-05-08 12:16:26 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 138.
+
+2025-05-08 12:16:26.615 | RK:  | [BEETHOVEN] 2025-05-08 12:16:26 INFO  ErpOrderService: Bestellabwicklung mit ID 61f9c323-6d4a-4e7e-8d1d-415201d7cb70 im Repository gespeichert.
+
+2025-05-08 12:16:26.619 | RK:  | [BEETHOVEN] 2025-05-08 12:16:26 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: 61f9c323-6d4a-4e7e-8d1d-415201d7cb70
+
+2025-05-08 12:16:26.621 | RK:  | [MOZART] 2025-05-08 12:16:26 INFO  BestellungService: Erstelle Bestellung mit Order ID: 61f9c323-6d4a-4e7e-8d1d-415201d7cb70...
+
+2025-05-08 12:16:26.622 | RK:  | [MOZART] 2025-05-08 12:16:26 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 61f9c323-6d4a-4e7e-8d1d-415201d7cb70...
+
+2025-05-08 12:16:26.624 | RK:  | [MOZART] 2025-05-08 12:16:26 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 61f9c323-6d4a-4e7e-8d1d-415201d7cb70...
+
+2025-05-08 12:16:26.624 | RK:  | [MOZART] 2025-05-08 12:16:26 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 61f9c323-6d4a-4e7e-8d1d-415201d7cb70...
+
+2025-05-08 12:16:26.625 | RK:  | [MOZART] 2025-05-08 12:16:26 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:16:26.611023900, lieferstatus=PROCESSING}...
+
+2025-05-08 12:16:26.627 | RK:  | [MOZART] 2025-05-08 12:16:26 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:16:26.611023900, lieferstatus=PROCESSING}...
+
+2025-05-08 12:16:26.628 | RK:  | "[SCHUHMACHER] 2025-05-08 12:16:26 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 12:23:04.123 | RK:  | [MOZART] 2025-05-08 12:23:04 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:23:04.126 | RK:  | [MOZART] 2025-05-08 12:23:04 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-123, email=kunde@324.com, adresse=Beispielstraße 42, 10115 Berlin, produktId=PROD-MOCK-001, menge=4, zahlungsmethode=Rechnung]...
+
+2025-05-08 12:23:04.126 | RK:  | [MOZART] 2025-05-08 12:23:04 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-001...
+
+2025-05-08 12:23:04.138 | RK:  | [BEETHOVEN] 2025-05-08 12:23:04 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-001...
+
+2025-05-08 12:23:04.141 | RK:  | [BEETHOVEN] 2025-05-08 12:23:04 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-001 aktualisiert. Neuer Lagerbestand: 134.
+
+2025-05-08 12:23:04.142 | RK:  | [BEETHOVEN] 2025-05-08 12:23:04 INFO  ErpOrderService: Bestellabwicklung mit ID bb2dece7-831a-4b4a-88db-42536da3f784 im Repository gespeichert.
+
+2025-05-08 12:23:04.150 | RK:  | [BEETHOVEN] 2025-05-08 12:23:04 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-001 erfolgreich bearbeitet. Bestellabwicklungs-ID: bb2dece7-831a-4b4a-88db-42536da3f784
+
+2025-05-08 12:23:04.153 | RK:  | [MOZART] 2025-05-08 12:23:04 INFO  BestellungService: Erstelle Bestellung mit Order ID: bb2dece7-831a-4b4a-88db-42536da3f784...
+
+2025-05-08 12:23:04.158 | RK:  | [MOZART] 2025-05-08 12:23:04 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: bb2dece7-831a-4b4a-88db-42536da3f784...
+
+2025-05-08 12:23:04.160 | RK:  | [MOZART] 2025-05-08 12:23:04 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: bb2dece7-831a-4b4a-88db-42536da3f784...
+
+2025-05-08 12:23:04.166 | RK:  | [MOZART] 2025-05-08 12:23:04 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: bb2dece7-831a-4b4a-88db-42536da3f784...
+
+2025-05-08 12:23:04.167 | RK:  | [MOZART] 2025-05-08 12:23:04 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:23:04.133786300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:23:04.167 | RK:  | [MOZART] 2025-05-08 12:23:04 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:23:04.133786300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:23:04.174 | RK:  | "[SCHUHMACHER] 2025-05-08 12:23:04 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"bb2dece7-831a-4b4a-88db-42536da3f784\",\"kundenId\":\"KundenID-123\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":23.96,\"status\":\"Processing\",\"email\":\"kunde@324.com\",\"adressZeichenkette\":\"Beispielstraße 42, 10115 Berlin\"}"
+2025-05-08 12:23:04.174 | RK:  | "[SCHUHMACHER] 2025-05-08 12:23:04 DEBUG [ECommerceListener] New order bb2dece7-831a-4b4a-88db-42536da3f784 added for customer KundenID-123. Initial status from DTO will be applied."
+2025-05-08 12:23:04.175 | RK:  | "[SCHUHMACHER] 2025-05-08 12:23:04 DEBUG [ECommerceListener] Bestellung bb2dece7-831a-4b4a-88db-42536da3f784 status updated to 1"
+2025-05-08 12:23:04.175 | RK:  | "[SCHUHMACHER] 2025-05-08 12:23:04 DEBUG [ECommerceListener] Bestellung bb2dece7-831a-4b4a-88db-42536da3f784 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 23.96"
+2025-05-08 12:23:16.977 | RK:  | [MOZART] 2025-05-08 12:23:16 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:23:16.978 | RK:  | [MOZART] 2025-05-08 12:23:16 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:23:16.978 | RK:  | [MOZART] 2025-05-08 12:23:16 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:23:16.981 | RK:  | [BEETHOVEN] 2025-05-08 12:23:16 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:23:16.981 | RK:  | [BEETHOVEN] 2025-05-08 12:23:16 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 28.
+
+2025-05-08 12:23:16.981 | RK:  | [BEETHOVEN] 2025-05-08 12:23:16 INFO  ErpOrderService: Bestellabwicklung mit ID 7d48b278-dba3-4a98-948e-3515db209313 im Repository gespeichert.
+
+2025-05-08 12:23:16.982 | RK:  | [BEETHOVEN] 2025-05-08 12:23:16 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: 7d48b278-dba3-4a98-948e-3515db209313
+
+2025-05-08 12:23:16.984 | RK:  | [MOZART] 2025-05-08 12:23:16 INFO  BestellungService: Erstelle Bestellung mit Order ID: 7d48b278-dba3-4a98-948e-3515db209313...
+
+2025-05-08 12:23:16.985 | RK:  | [MOZART] 2025-05-08 12:23:16 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 7d48b278-dba3-4a98-948e-3515db209313...
+
+2025-05-08 12:23:16.987 | RK:  | [MOZART] 2025-05-08 12:23:16 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 7d48b278-dba3-4a98-948e-3515db209313...
+
+2025-05-08 12:23:16.988 | RK:  | [MOZART] 2025-05-08 12:23:16 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 7d48b278-dba3-4a98-948e-3515db209313...
+
+2025-05-08 12:23:16.989 | RK:  | [MOZART] 2025-05-08 12:23:16 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:23:16.977140100, lieferstatus=PROCESSING}...
+
+2025-05-08 12:23:16.990 | RK:  | [MOZART] 2025-05-08 12:23:16 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:23:16.977140100, lieferstatus=PROCESSING}...
+
+2025-05-08 12:23:16.992 | RK:  | "[SCHUHMACHER] 2025-05-08 12:23:16 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 12:23:28.944 | RK:  | [MOZART] 2025-05-08 12:23:28 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:23:28.945 | RK:  | [MOZART] 2025-05-08 12:23:28 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:23:28.946 | RK:  | [MOZART] 2025-05-08 12:23:28 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:23:28.952 | RK:  | [BEETHOVEN] 2025-05-08 12:23:28 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:23:28.954 | RK:  | [BEETHOVEN] 2025-05-08 12:23:28 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 26.
+
+2025-05-08 12:23:28.955 | RK:  | [BEETHOVEN] 2025-05-08 12:23:28 INFO  ErpOrderService: Bestellabwicklung mit ID 94703091-d9c3-415c-93cc-655e58246443 im Repository gespeichert.
+
+2025-05-08 12:23:28.959 | RK:  | [BEETHOVEN] 2025-05-08 12:23:28 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: 94703091-d9c3-415c-93cc-655e58246443
+
+2025-05-08 12:23:28.962 | RK:  | [MOZART] 2025-05-08 12:23:28 INFO  BestellungService: Erstelle Bestellung mit Order ID: 94703091-d9c3-415c-93cc-655e58246443...
+
+2025-05-08 12:23:28.964 | RK:  | [MOZART] 2025-05-08 12:23:28 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 94703091-d9c3-415c-93cc-655e58246443...
+
+2025-05-08 12:23:28.965 | RK:  | [MOZART] 2025-05-08 12:23:28 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 94703091-d9c3-415c-93cc-655e58246443...
+
+2025-05-08 12:23:28.968 | RK:  | [MOZART] 2025-05-08 12:23:28 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 94703091-d9c3-415c-93cc-655e58246443...
+
+2025-05-08 12:23:28.970 | RK:  | [MOZART] 2025-05-08 12:23:28 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:23:28.947573500, lieferstatus=PROCESSING}...
+
+2025-05-08 12:23:28.971 | RK:  | [MOZART] 2025-05-08 12:23:28 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:23:28.947573500, lieferstatus=PROCESSING}...
+
+2025-05-08 12:23:28.975 | RK:  | "[SCHUHMACHER] 2025-05-08 12:23:28 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"94703091-d9c3-415c-93cc-655e58246443\",\"kundenId\":\"KundenID-456\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":59.9,\"status\":\"Processing\",\"email\":\"neukunde@beispiel.com\",\"adressZeichenkette\":\"Hauptstraße 5, 80331 München\"}"
+2025-05-08 12:23:28.976 | RK:  | "[SCHUHMACHER] 2025-05-08 12:23:28 DEBUG [ECommerceListener] New customer added with ID: KundenID-456"
+2025-05-08 12:23:28.976 | RK:  | "[SCHUHMACHER] 2025-05-08 12:23:28 DEBUG [ECommerceListener] New order 94703091-d9c3-415c-93cc-655e58246443 added for customer KundenID-456. Initial status from DTO will be applied."
+2025-05-08 12:23:28.977 | RK:  | "[SCHUHMACHER] 2025-05-08 12:23:28 DEBUG [ECommerceListener] Bestellung 94703091-d9c3-415c-93cc-655e58246443 status updated to 1"
+2025-05-08 12:23:28.978 | RK:  | "[SCHUHMACHER] 2025-05-08 12:23:28 DEBUG [ECommerceListener] Bestellung 94703091-d9c3-415c-93cc-655e58246443 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 59.9"
+2025-05-08 12:23:42.243 | RK:  | [MOZART] 2025-05-08 12:23:42 INFO  Waiting for workers to finish.
+
+2025-05-08 12:23:42.485 | RK:  | [MOZART] 2025-05-08 12:23:42 INFO  Successfully waited for workers to finish.
+
+2025-05-08 12:24:33.349 | RK:  | "[SCHUHMACHER] 2025-05-08 12:24:33 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 12:24:33.351 | RK:  | "[SCHUHMACHER] 2025-05-08 12:24:33 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 12:24:33.351 | RK:  | "[SCHUHMACHER] 2025-05-08 12:24:33 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 12:24:33.351 | RK:  | "[SCHUHMACHER] 2025-05-08 12:24:33 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 12:24:33.352 | RK:  | "[SCHUHMACHER] 2025-05-08 12:24:33 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 12:24:33.430 | RK:  | "[SCHUHMACHER] 2025-05-08 12:24:33 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 12:26:54.970 | RK:  | [MOZART] 2025-05-08 12:26:54 INFO  HV000001: Hibernate Validator 8.0.1.Final
+
+2025-05-08 12:26:55.056 | RK:  | [MOZART] 2025-05-08 12:26:55 INFO  Starting MozartApplication using Java 24.0.1 with PID 16924 (C:\Users\jonas\sprint_2\mozart\target\classes started by jonas in C:\Users\jonas\sprint_2)
+
+2025-05-08 12:26:55.058 | RK:  | [MOZART] 2025-05-08 12:26:55 INFO  No active profile set, falling back to 1 default profile: "default"
+
+2025-05-08 12:26:57.019 | RK:  | [MOZART] 2025-05-08 12:26:57 INFO  Tomcat initialized with port 8089 (http)
+
+2025-05-08 12:26:57.036 | RK:  | [MOZART] 2025-05-08 12:26:57 INFO  Initializing ProtocolHandler ["http-nio-8089"]
+
+2025-05-08 12:26:57.038 | RK:  | [MOZART] 2025-05-08 12:26:57 INFO  Starting service [Tomcat]
+
+2025-05-08 12:26:57.039 | RK:  | [MOZART] 2025-05-08 12:26:57 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+
+2025-05-08 12:26:57.110 | RK:  | [MOZART] 2025-05-08 12:26:57 INFO  Initializing Spring embedded WebApplicationContext
+
+2025-05-08 12:26:57.112 | RK:  | [MOZART] 2025-05-08 12:26:57 INFO  Root WebApplicationContext: initialization completed in 1988 ms
+
+2025-05-08 12:26:57.538 | RK:  | [MOZART] 2025-05-08 12:26:57 INFO  Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+
+2025-05-08 12:26:58.448 | RK:  | [MOZART] 2025-05-08 12:26:58 INFO  Starting ProtocolHandler ["http-nio-8089"]
+
+2025-05-08 12:26:58.466 | RK:  | [MOZART] 2025-05-08 12:26:58 INFO  Tomcat started on port 8089 (http) with context path ''
+
+2025-05-08 12:26:58.471 | RK:  | [MOZART] 2025-05-08 12:26:58 INFO  Attempting to connect to: [localhost:5672]
+
+2025-05-08 12:26:58.499 | RK:  | [MOZART] 2025-05-08 12:26:58 INFO  Created new connection: rabbitConnectionFactory#285583d4:0/SimpleConnection@d28c214 [delegate=amqp://guest@127.0.0.1:5672/, localPort=56859]
+
+2025-05-08 12:26:58.506 | RK:  | [MOZART] 2025-05-08 12:26:58 INFO  Auto-declaring a non-durable, auto-delete, or exclusive Queue (crm.updates.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+
+2025-05-08 12:26:58.624 | RK:  | [MOZART] 2025-05-08 12:26:58 INFO  Started MozartApplication in 4.123 seconds (process running for 5.456)
+
+2025-05-08 12:27:06.548 | RK:  | [MOZART] 2025-05-08 12:27:06 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2025-05-08 12:27:06.548 | RK:  | [MOZART] 2025-05-08 12:27:06 INFO  Initializing Servlet 'dispatcherServlet'
+
+2025-05-08 12:27:06.550 | RK:  | [MOZART] 2025-05-08 12:27:06 INFO  Completed initialization in 1 ms
+
+2025-05-08 12:27:06.792 | RK:  | [MOZART] 2025-05-08 12:27:06 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:27:06.793 | RK:  | [MOZART] 2025-05-08 12:27:06 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:27:06.823 | RK:  | [MOZART] 2025-05-08 12:27:06 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:27:07.180 | RK:  | [BEETHOVEN] 2025-05-08 12:27:07 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:27:07.181 | RK:  | [BEETHOVEN] 2025-05-08 12:27:07 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 24.
+
+2025-05-08 12:27:07.181 | RK:  | [BEETHOVEN] 2025-05-08 12:27:07 INFO  ErpOrderService: Bestellabwicklung mit ID e0e5f78a-3d74-48b0-a91c-1baf7c9ed45a im Repository gespeichert.
+
+2025-05-08 12:27:07.185 | RK:  | [BEETHOVEN] 2025-05-08 12:27:07 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: e0e5f78a-3d74-48b0-a91c-1baf7c9ed45a
+
+2025-05-08 12:27:07.204 | RK:  | [MOZART] 2025-05-08 12:27:07 INFO  BestellungService: Erstelle Bestellung mit Order ID: e0e5f78a-3d74-48b0-a91c-1baf7c9ed45a...
+
+2025-05-08 12:27:07.206 | RK:  | [MOZART] 2025-05-08 12:27:07 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: e0e5f78a-3d74-48b0-a91c-1baf7c9ed45a...
+
+2025-05-08 12:27:07.207 | RK:  | [MOZART] 2025-05-08 12:27:07 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: e0e5f78a-3d74-48b0-a91c-1baf7c9ed45a...
+
+2025-05-08 12:28:23.806 | RK:  | [MOZART] 2025-05-08 12:28:23 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: e0e5f78a-3d74-48b0-a91c-1baf7c9ed45a...
+
+2025-05-08 12:28:23.807 | RK:  | "[SCHUHMACHER] 2025-05-08 12:28:23 ERROR [Server] There is no matching event handler defined in the remote service. Event pattern: undefined"
+2025-05-08 12:28:23.810 | RK:  | [MOZART] 2025-05-08 12:28:23 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:27:07.178228300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:28:23.811 | RK:  | [MOZART] 2025-05-08 12:28:23 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:27:07.178228300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:28:43.050 | RK:  | [MOZART] 2025-05-08 12:28:43 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:28:43.053 | RK:  | [MOZART] 2025-05-08 12:28:43 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:28:43.054 | RK:  | [MOZART] 2025-05-08 12:28:43 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:28:43.062 | RK:  | [BEETHOVEN] 2025-05-08 12:28:43 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:28:43.063 | RK:  | [BEETHOVEN] 2025-05-08 12:28:43 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 22.
+
+2025-05-08 12:28:43.063 | RK:  | [BEETHOVEN] 2025-05-08 12:28:43 INFO  ErpOrderService: Bestellabwicklung mit ID 11a47c4c-10a3-4d1d-9612-ac86d227bb73 im Repository gespeichert.
+
+2025-05-08 12:28:43.066 | RK:  | [BEETHOVEN] 2025-05-08 12:28:43 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: 11a47c4c-10a3-4d1d-9612-ac86d227bb73
+
+2025-05-08 12:28:43.073 | RK:  | [MOZART] 2025-05-08 12:28:43 INFO  BestellungService: Erstelle Bestellung mit Order ID: 11a47c4c-10a3-4d1d-9612-ac86d227bb73...
+
+2025-05-08 12:28:43.076 | RK:  | [MOZART] 2025-05-08 12:28:43 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 11a47c4c-10a3-4d1d-9612-ac86d227bb73...
+
+2025-05-08 12:28:43.078 | RK:  | [MOZART] 2025-05-08 12:28:43 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 11a47c4c-10a3-4d1d-9612-ac86d227bb73...
+
+2025-05-08 12:32:37.300 | RK:  | "[SCHUHMACHER] 2025-05-08 12:32:37 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 12:32:37.303 | RK:  | "[SCHUHMACHER] 2025-05-08 12:32:37 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 12:32:37.303 | RK:  | "[SCHUHMACHER] 2025-05-08 12:32:37 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 12:32:37.304 | RK:  | "[SCHUHMACHER] 2025-05-08 12:32:37 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 12:32:37.304 | RK:  | "[SCHUHMACHER] 2025-05-08 12:32:37 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 12:32:37.375 | RK:  | "[SCHUHMACHER] 2025-05-08 12:32:37 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 12:33:31.102 | RK:  | "[SCHUHMACHER] 2025-05-08 12:33:30 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 12:33:31.104 | RK:  | "[SCHUHMACHER] 2025-05-08 12:33:30 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 12:33:31.105 | RK:  | "[SCHUHMACHER] 2025-05-08 12:33:31 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 12:33:31.105 | RK:  | "[SCHUHMACHER] 2025-05-08 12:33:31 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 12:33:31.105 | RK:  | "[SCHUHMACHER] 2025-05-08 12:33:31 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 12:33:31.180 | RK:  | "[SCHUHMACHER] 2025-05-08 12:33:31 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 12:33:35.919 | RK:  | [MOZART] 2025-05-08 12:33:35 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 11a47c4c-10a3-4d1d-9612-ac86d227bb73...
+
+2025-05-08 12:33:35.923 | RK:  | [MOZART] 2025-05-08 12:33:35 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:28:43.060522900, lieferstatus=PROCESSING}...
+
+2025-05-08 12:33:35.924 | RK:  | [MOZART] 2025-05-08 12:33:35 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:28:43.060522900, lieferstatus=PROCESSING}...
+
+2025-05-08 12:33:35.929 | RK:  | "[SCHUHMACHER] 2025-05-08 12:33:35 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"11a47c4c-10a3-4d1d-9612-ac86d227bb73\",\"kundenId\":\"KundenID-456\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":59.9,\"status\":\"Processing\",\"email\":\"neukunde@beispiel.com\",\"adressZeichenkette\":\"Hauptstraße 5, 80331 München\"}"
+2025-05-08 12:33:35.931 | RK:  | "[SCHUHMACHER] 2025-05-08 12:33:35 DEBUG [ECommerceListener] New customer added with ID: KundenID-456"
+2025-05-08 12:33:35.932 | RK:  | "[SCHUHMACHER] 2025-05-08 12:33:35 DEBUG [ECommerceListener] New order 11a47c4c-10a3-4d1d-9612-ac86d227bb73 added for customer KundenID-456. Initial status from DTO will be applied."
+2025-05-08 12:33:35.932 | RK:  | "[SCHUHMACHER] 2025-05-08 12:33:35 DEBUG [ECommerceListener] Bestellung 11a47c4c-10a3-4d1d-9612-ac86d227bb73 status updated to 1"
+2025-05-08 12:33:35.932 | RK:  | "[SCHUHMACHER] 2025-05-08 12:33:35 DEBUG [ECommerceListener] Bestellung 11a47c4c-10a3-4d1d-9612-ac86d227bb73 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 59.9"
+2025-05-08 12:33:43.391 | RK:  | [MOZART] 2025-05-08 12:33:43 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:33:43.392 | RK:  | [MOZART] 2025-05-08 12:33:43 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:33:43.392 | RK:  | [MOZART] 2025-05-08 12:33:43 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:33:43.400 | RK:  | [BEETHOVEN] 2025-05-08 12:33:43 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:33:43.401 | RK:  | [BEETHOVEN] 2025-05-08 12:33:43 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 20.
+
+2025-05-08 12:33:43.403 | RK:  | [BEETHOVEN] 2025-05-08 12:33:43 INFO  ErpOrderService: Bestellabwicklung mit ID 568edf34-3b44-4c78-927a-7e232e0cca1c im Repository gespeichert.
+
+2025-05-08 12:33:43.407 | RK:  | [BEETHOVEN] 2025-05-08 12:33:43 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: 568edf34-3b44-4c78-927a-7e232e0cca1c
+
+2025-05-08 12:33:43.410 | RK:  | [MOZART] 2025-05-08 12:33:43 INFO  BestellungService: Erstelle Bestellung mit Order ID: 568edf34-3b44-4c78-927a-7e232e0cca1c...
+
+2025-05-08 12:33:43.411 | RK:  | [MOZART] 2025-05-08 12:33:43 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 568edf34-3b44-4c78-927a-7e232e0cca1c...
+
+2025-05-08 12:33:43.412 | RK:  | [MOZART] 2025-05-08 12:33:43 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 568edf34-3b44-4c78-927a-7e232e0cca1c...
+
+2025-05-08 12:33:47.485 | RK:  | [MOZART] 2025-05-08 12:33:47 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 568edf34-3b44-4c78-927a-7e232e0cca1c...
+
+2025-05-08 12:33:47.487 | RK:  | [MOZART] 2025-05-08 12:33:47 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:33:43.399310100, lieferstatus=PROCESSING}...
+
+2025-05-08 12:33:47.489 | RK:  | "[SCHUHMACHER] 2025-05-08 12:33:47 WARN [Server] An unsupported event was received. It has been negative acknowledged, so it will not be re-delivered. Pattern: undefined"
+2025-05-08 12:33:47.489 | RK:  | [MOZART] 2025-05-08 12:33:47 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:33:43.399310100, lieferstatus=PROCESSING}...
+
+2025-05-08 12:37:51.034 | RK:  | [MOZART] 2025-05-08 12:37:51 INFO  HV000001: Hibernate Validator 8.0.1.Final
+
+2025-05-08 12:37:51.086 | RK:  | [MOZART] 2025-05-08 12:37:51 INFO  Starting MozartApplication using Java 24.0.1 with PID 14992 (C:\Users\jonas\sprint_2\mozart\target\classes started by jonas in C:\Users\jonas\sprint_2\mozart)
+
+2025-05-08 12:37:51.090 | RK:  | [MOZART] 2025-05-08 12:37:51 INFO  No active profile set, falling back to 1 default profile: "default"
+
+2025-05-08 12:37:52.225 | RK:  | [MOZART] 2025-05-08 12:37:52 INFO  Tomcat initialized with port 8089 (http)
+
+2025-05-08 12:37:52.248 | RK:  | [MOZART] 2025-05-08 12:37:52 INFO  Initializing ProtocolHandler ["http-nio-8089"]
+
+2025-05-08 12:37:52.251 | RK:  | [MOZART] 2025-05-08 12:37:52 INFO  Starting service [Tomcat]
+
+2025-05-08 12:37:52.252 | RK:  | [MOZART] 2025-05-08 12:37:52 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+
+2025-05-08 12:37:52.315 | RK:  | [MOZART] 2025-05-08 12:37:52 INFO  Initializing Spring embedded WebApplicationContext
+
+2025-05-08 12:37:52.316 | RK:  | [MOZART] 2025-05-08 12:37:52 INFO  Root WebApplicationContext: initialization completed in 1169 ms
+
+2025-05-08 12:37:52.613 | RK:  | [MOZART] 2025-05-08 12:37:52 INFO  Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+
+2025-05-08 12:37:53.201 | RK:  | [MOZART] 2025-05-08 12:37:53 INFO  Starting ProtocolHandler ["http-nio-8089"]
+
+2025-05-08 12:37:53.214 | RK:  | [MOZART] 2025-05-08 12:37:53 INFO  Tomcat started on port 8089 (http) with context path ''
+
+2025-05-08 12:37:53.218 | RK:  | [MOZART] 2025-05-08 12:37:53 INFO  Attempting to connect to: [localhost:5672]
+
+2025-05-08 12:37:53.230 | RK:  | [MOZART] 2025-05-08 12:37:53 INFO  Created new connection: rabbitConnectionFactory#7e1ffe70:0/SimpleConnection@701d2b59 [delegate=amqp://guest@127.0.0.1:5672/, localPort=57073]
+
+2025-05-08 12:37:53.242 | RK:  | [MOZART] 2025-05-08 12:37:53 INFO  Auto-declaring a non-durable, auto-delete, or exclusive Queue (crm.updates.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+
+2025-05-08 12:37:53.313 | RK:  | [MOZART] 2025-05-08 12:37:53 INFO  Started MozartApplication in 2.612 seconds (process running for 3.774)
+
+2025-05-08 12:38:10.499 | RK:  | [MOZART] 2025-05-08 12:38:10 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2025-05-08 12:38:10.500 | RK:  | [MOZART] 2025-05-08 12:38:10 INFO  Initializing Servlet 'dispatcherServlet'
+
+2025-05-08 12:38:10.505 | RK:  | [MOZART] 2025-05-08 12:38:10 INFO  Completed initialization in 2 ms
+
+2025-05-08 12:38:10.827 | RK:  | [MOZART] 2025-05-08 12:38:10 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:38:10.828 | RK:  | [MOZART] 2025-05-08 12:38:10 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:38:10.863 | RK:  | [MOZART] 2025-05-08 12:38:10 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:38:11.356 | RK:  | [BEETHOVEN] 2025-05-08 12:38:11 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:38:11.358 | RK:  | [BEETHOVEN] 2025-05-08 12:38:11 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 18.
+
+2025-05-08 12:38:11.359 | RK:  | [BEETHOVEN] 2025-05-08 12:38:11 INFO  ErpOrderService: Bestellabwicklung mit ID 794a7492-6844-4856-8518-38f86545e2fc im Repository gespeichert.
+
+2025-05-08 12:38:11.365 | RK:  | [BEETHOVEN] 2025-05-08 12:38:11 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: 794a7492-6844-4856-8518-38f86545e2fc
+
+2025-05-08 12:38:11.416 | RK:  | [MOZART] 2025-05-08 12:38:11 INFO  BestellungService: Erstelle Bestellung mit Order ID: 794a7492-6844-4856-8518-38f86545e2fc...
+
+2025-05-08 12:38:11.416 | RK:  | [MOZART] 2025-05-08 12:38:11 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 794a7492-6844-4856-8518-38f86545e2fc...
+
+2025-05-08 12:38:11.417 | RK:  | [MOZART] 2025-05-08 12:38:11 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 794a7492-6844-4856-8518-38f86545e2fc...
+
+2025-05-08 12:38:11.509 | RK:  | "[SCHUHMACHER] 2025-05-08 12:38:11 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"794a7492-6844-4856-8518-38f86545e2fc\",\"kundenId\":\"KundenID-456\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":59.9,\"status\":\"Processing\",\"email\":\"neukunde@beispiel.com\",\"adressZeichenkette\":\"Hauptstraße 5, 80331 München\"}"
+2025-05-08 12:38:11.510 | RK:  | "[SCHUHMACHER] 2025-05-08 12:38:11 DEBUG [ECommerceListener] New order 794a7492-6844-4856-8518-38f86545e2fc added for customer KundenID-456. Initial status from DTO will be applied."
+2025-05-08 12:38:11.511 | RK:  | [MOZART] 2025-05-08 12:38:11 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 794a7492-6844-4856-8518-38f86545e2fc...
+
+2025-05-08 12:38:11.511 | RK:  | "[SCHUHMACHER] 2025-05-08 12:38:11 DEBUG [ECommerceListener] Bestellung 794a7492-6844-4856-8518-38f86545e2fc status updated to 1"
+2025-05-08 12:38:11.512 | RK:  | "[SCHUHMACHER] 2025-05-08 12:38:11 DEBUG [ECommerceListener] Bestellung 794a7492-6844-4856-8518-38f86545e2fc updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 59.9"
+2025-05-08 12:38:11.519 | RK:  | [MOZART] 2025-05-08 12:38:11 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:38:11.353987900, lieferstatus=PROCESSING}...
+
+2025-05-08 12:38:11.522 | RK:  | [MOZART] 2025-05-08 12:38:11 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:38:11.353987900, lieferstatus=PROCESSING}...
+
+2025-05-08 12:38:51.649 | RK:  | "[SCHUHMACHER] 2025-05-08 12:38:51 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 12:38:51.653 | RK:  | "[SCHUHMACHER] 2025-05-08 12:38:51 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 12:38:51.654 | RK:  | "[SCHUHMACHER] 2025-05-08 12:38:51 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 12:38:51.655 | RK:  | "[SCHUHMACHER] 2025-05-08 12:38:51 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 12:38:51.655 | RK:  | "[SCHUHMACHER] 2025-05-08 12:38:51 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 12:38:51.721 | RK:  | "[SCHUHMACHER] 2025-05-08 12:38:51 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 12:44:33.729 | RK:  | [MOZART] 2025-05-08 12:44:02 INFO  HV000001: Hibernate Validator 8.0.1.Final
+
+2025-05-08 12:44:33.730 | RK:  | [MOZART] 2025-05-08 12:44:02 INFO  Starting MozartApplication using Java 24.0.1 with PID 37292 (C:\Users\jonas\sprint_2\mozart\target\classes started by jonas in C:\Users\jonas\sprint_2\mozart)
+
+2025-05-08 12:44:33.731 | RK:  | [MOZART] 2025-05-08 12:44:02 INFO  No active profile set, falling back to 1 default profile: "default"
+
+2025-05-08 12:44:33.731 | RK:  | [MOZART] 2025-05-08 12:44:03 INFO  Tomcat initialized with port 8089 (http)
+
+2025-05-08 12:44:33.731 | RK:  | [MOZART] 2025-05-08 12:44:03 INFO  Initializing ProtocolHandler ["http-nio-8089"]
+
+2025-05-08 12:44:33.732 | RK:  | [MOZART] 2025-05-08 12:44:03 INFO  Starting service [Tomcat]
+
+2025-05-08 12:44:33.732 | RK:  | [MOZART] 2025-05-08 12:44:03 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+
+2025-05-08 12:44:33.732 | RK:  | [MOZART] 2025-05-08 12:44:04 INFO  Initializing Spring embedded WebApplicationContext
+
+2025-05-08 12:44:33.733 | RK:  | [MOZART] 2025-05-08 12:44:04 INFO  Root WebApplicationContext: initialization completed in 1781 ms
+
+2025-05-08 12:44:33.734 | RK:  | [MOZART] 2025-05-08 12:44:04 INFO  Detected grpc-netty-shaded: Creating ShadedNettyChannelFactory + InProcessChannelFactory
+
+2025-05-08 12:44:33.734 | RK:  | [MOZART] 2025-05-08 12:44:05 INFO  Starting ProtocolHandler ["http-nio-8089"]
+
+2025-05-08 12:44:33.735 | RK:  | [MOZART] 2025-05-08 12:44:05 INFO  Tomcat started on port 8089 (http) with context path ''
+
+2025-05-08 12:44:33.736 | RK:  | [MOZART] 2025-05-08 12:44:05 INFO  Attempting to connect to: [localhost:5672]
+
+2025-05-08 12:44:33.736 | RK:  | [MOZART] 2025-05-08 12:44:05 INFO  Created new connection: rabbitConnectionFactory#574059d5:0/SimpleConnection@2964511 [delegate=amqp://guest@127.0.0.1:5672/, localPort=57855]
+
+2025-05-08 12:44:33.737 | RK:  | [MOZART] 2025-05-08 12:44:05 INFO  Auto-declaring a non-durable, auto-delete, or exclusive Queue (crm.updates.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+
+2025-05-08 12:44:33.737 | RK:  | [MOZART] 2025-05-08 12:44:05 INFO  Started MozartApplication in 4.128 seconds (process running for 5.669)
+
+2025-05-08 12:44:33.738 | RK:  | [BEETHOVEN] 2025-05-08 12:44:12 INFO  Starting BeethovenApplication using Java 24.0.1 with PID 33204 (C:\Users\jonas\sprint_2\beethoven\target\classes started by jonas in C:\Users\jonas\sprint_2\beethoven)
+
+2025-05-08 12:44:33.738 | RK:  | [BEETHOVEN] 2025-05-08 12:44:12 INFO  No active profile set, falling back to 1 default profile: "default"
+
+2025-05-08 12:44:33.739 | RK:  | [BEETHOVEN] 2025-05-08 12:44:13 INFO  Tomcat initialized with port 8080 (http)
+
+2025-05-08 12:44:33.739 | RK:  | [BEETHOVEN] 2025-05-08 12:44:13 INFO  Initializing ProtocolHandler ["http-nio-8080"]
+
+2025-05-08 12:44:33.739 | RK:  | [BEETHOVEN] 2025-05-08 12:44:13 INFO  Starting service [Tomcat]
+
+2025-05-08 12:44:33.739 | RK:  | [BEETHOVEN] 2025-05-08 12:44:13 INFO  Starting Servlet engine: [Apache Tomcat/10.1.39]
+
+2025-05-08 12:44:33.739 | RK:  | [BEETHOVEN] 2025-05-08 12:44:13 INFO  Initializing Spring embedded WebApplicationContext
+
+2025-05-08 12:44:33.740 | RK:  | [BEETHOVEN] 2025-05-08 12:44:13 INFO  Root WebApplicationContext: initialization completed in 1333 ms
+
+2025-05-08 12:44:33.740 | RK:  | [BEETHOVEN] 2025-05-08 12:44:14 INFO  Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+
+2025-05-08 12:44:33.741 | RK:  | [BEETHOVEN] 2025-05-08 12:44:14 INFO  Starting ProtocolHandler ["http-nio-8080"]
+
+2025-05-08 12:44:33.741 | RK:  | [BEETHOVEN] 2025-05-08 12:44:14 INFO  Tomcat started on port 8080 (http) with context path '/'
+
+2025-05-08 12:44:33.741 | RK:  | [BEETHOVEN] 2025-05-08 12:44:14 INFO  Registered gRPC service: ErpOrderService, bean: erpOrderService, class: kirschner.flaig.beethoven.service.ErpOrderService
+
+2025-05-08 12:44:33.742 | RK:  | [BEETHOVEN] 2025-05-08 12:44:14 INFO  Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+
+2025-05-08 12:44:33.742 | RK:  | [BEETHOVEN] 2025-05-08 12:44:14 INFO  Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+
+2025-05-08 12:44:33.742 | RK:  | [BEETHOVEN] 2025-05-08 12:44:14 INFO  gRPC Server started, listening on address: *, port: 9090
+
+2025-05-08 12:44:33.743 | RK:  | [BEETHOVEN] 2025-05-08 12:44:14 INFO  Started BeethovenApplication in 3.223 seconds (process running for 4.964)
+
+2025-05-08 12:45:43.839 | RK:  | "[SCHUHMACHER] 2025-05-08 12:45:43 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 12:45:43.840 | RK:  | "[SCHUHMACHER] 2025-05-08 12:45:43 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 12:45:43.840 | RK:  | "[SCHUHMACHER] 2025-05-08 12:45:43 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 12:45:43.841 | RK:  | "[SCHUHMACHER] 2025-05-08 12:45:43 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 12:45:43.841 | RK:  | "[SCHUHMACHER] 2025-05-08 12:45:43 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 12:45:43.912 | RK:  | "[SCHUHMACHER] 2025-05-08 12:45:43 INFO [NestMicroservice] Nest microservice successfully started"
+2025-05-08 12:47:00.811 | RK:  | [MOZART] 2025-05-08 12:47:00 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2025-05-08 12:47:00.812 | RK:  | [MOZART] 2025-05-08 12:47:00 INFO  Initializing Servlet 'dispatcherServlet'
+
+2025-05-08 12:47:00.812 | RK:  | [MOZART] 2025-05-08 12:47:00 INFO  Completed initialization in 0 ms
+
+2025-05-08 12:47:01.002 | RK:  | [MOZART] 2025-05-08 12:47:00 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:47:01.002 | RK:  | [MOZART] 2025-05-08 12:47:01 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:47:01.032 | RK:  | [MOZART] 2025-05-08 12:47:01 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:47:01.580 | RK:  | [BEETHOVEN] 2025-05-08 12:47:01 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:47:01.604 | RK:  | [BEETHOVEN] 2025-05-08 12:47:01 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 28.
+
+2025-05-08 12:47:01.606 | RK:  | [BEETHOVEN] 2025-05-08 12:47:01 INFO  ErpOrderService: Bestellabwicklung mit ID 798626e3-299b-479d-9304-c6c47aff255e im Repository gespeichert.
+
+2025-05-08 12:47:01.627 | RK:  | [BEETHOVEN] 2025-05-08 12:47:01 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: 798626e3-299b-479d-9304-c6c47aff255e
+
+2025-05-08 12:47:01.658 | RK:  | [MOZART] 2025-05-08 12:47:01 INFO  BestellungService: Erstelle Bestellung mit Order ID: 798626e3-299b-479d-9304-c6c47aff255e...
+
+2025-05-08 12:47:01.661 | RK:  | [MOZART] 2025-05-08 12:47:01 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 798626e3-299b-479d-9304-c6c47aff255e...
+
+2025-05-08 12:47:01.662 | RK:  | [MOZART] 2025-05-08 12:47:01 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 798626e3-299b-479d-9304-c6c47aff255e...
+
+2025-05-08 12:47:01.709 | RK:  | [MOZART] 2025-05-08 12:47:01 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 798626e3-299b-479d-9304-c6c47aff255e...
+
+2025-05-08 12:47:01.715 | RK:  | [MOZART] 2025-05-08 12:47:01 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:47:01.601928300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:47:01.716 | RK:  | [MOZART] 2025-05-08 12:47:01 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:47:01.601928300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:47:01.716 | RK:  | "[SCHUHMACHER] 2025-05-08 12:47:01 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"798626e3-299b-479d-9304-c6c47aff255e\",\"kundenId\":\"KundenID-456\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":59.9,\"status\":\"Processing\",\"email\":\"neukunde@beispiel.com\",\"adressZeichenkette\":\"Hauptstraße 5, 80331 München\"}"
+2025-05-08 12:47:01.717 | RK:  | "[SCHUHMACHER] 2025-05-08 12:47:01 DEBUG [ECommerceListener] New customer added with ID: KundenID-456"
+2025-05-08 12:47:01.717 | RK:  | "[SCHUHMACHER] 2025-05-08 12:47:01 DEBUG [ECommerceListener] New order 798626e3-299b-479d-9304-c6c47aff255e added for customer KundenID-456. Initial status from DTO will be applied."
+2025-05-08 12:47:01.717 | RK:  | "[SCHUHMACHER] 2025-05-08 12:47:01 DEBUG [ECommerceListener] Bestellung 798626e3-299b-479d-9304-c6c47aff255e status updated to 1"
+2025-05-08 12:47:01.717 | RK:  | "[SCHUHMACHER] 2025-05-08 12:47:01 DEBUG [ECommerceListener] Bestellung 798626e3-299b-479d-9304-c6c47aff255e updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 59.9"
+2025-05-08 12:47:10.020 | RK:  | [MOZART] 2025-05-08 12:47:10 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:47:10.021 | RK:  | [MOZART] 2025-05-08 12:47:10 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:47:10.021 | RK:  | [MOZART] 2025-05-08 12:47:10 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:47:10.027 | RK:  | [BEETHOVEN] 2025-05-08 12:47:10 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:47:10.027 | RK:  | [BEETHOVEN] 2025-05-08 12:47:10 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 26.
+
+2025-05-08 12:47:10.028 | RK:  | [BEETHOVEN] 2025-05-08 12:47:10 INFO  ErpOrderService: Bestellabwicklung mit ID 623e4dfa-26b2-4f2f-bfcd-216401abed0e im Repository gespeichert.
+
+2025-05-08 12:47:10.029 | RK:  | [BEETHOVEN] 2025-05-08 12:47:10 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: 623e4dfa-26b2-4f2f-bfcd-216401abed0e
+
+2025-05-08 12:47:10.031 | RK:  | [MOZART] 2025-05-08 12:47:10 INFO  BestellungService: Erstelle Bestellung mit Order ID: 623e4dfa-26b2-4f2f-bfcd-216401abed0e...
+
+2025-05-08 12:47:10.033 | RK:  | [MOZART] 2025-05-08 12:47:10 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 623e4dfa-26b2-4f2f-bfcd-216401abed0e...
+
+2025-05-08 12:47:10.034 | RK:  | [MOZART] 2025-05-08 12:47:10 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 623e4dfa-26b2-4f2f-bfcd-216401abed0e...
+
+2025-05-08 12:47:10.036 | RK:  | [MOZART] 2025-05-08 12:47:10 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 623e4dfa-26b2-4f2f-bfcd-216401abed0e...
+
+2025-05-08 12:47:10.036 | RK:  | [MOZART] 2025-05-08 12:47:10 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:47:10.025576800, lieferstatus=PROCESSING}...
+
+2025-05-08 12:47:10.038 | RK:  | [MOZART] 2025-05-08 12:47:10 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:47:10.025576800, lieferstatus=PROCESSING}...
+
+2025-05-08 12:47:10.042 | RK:  | "[SCHUHMACHER] 2025-05-08 12:47:10 WARN [Server] An unsupported event was received. It has been negative acknowledged, so it will not be re-delivered. Pattern: undefined"
+2025-05-08 12:50:49.903 | RK:  | "[SCHUHMACHER] 2025-05-08 12:50:49 INFO [RabbitMQModule] Initializing RabbitMQ Handlers"
+2025-05-08 12:50:49.905 | RK:  | "[SCHUHMACHER] 2025-05-08 12:50:49 INFO [RabbitMQModule] Registering rabbitmq handlers from ECommerceListener"
+2025-05-08 12:50:49.906 | RK:  | "[SCHUHMACHER] 2025-05-08 12:50:49 INFO [RabbitMQModule] ECommerceListener.handleCRMUpdate {subscribe} -> crm.direct.exchange::crm.updates.routingkey::crm.updates.queue"
+2025-05-08 12:50:49.906 | RK:  | "[SCHUHMACHER] 2025-05-08 12:50:49 INFO [AmqpConnection] Successfully connected to RabbitMQ broker (default)"
+2025-05-08 12:50:49.906 | RK:  | "[SCHUHMACHER] 2025-05-08 12:50:49 INFO [AmqpConnection] Successfully connected a RabbitMQ channel \"AmqpConnection\""
+2025-05-08 12:50:49.907 | RK:  | "[SCHUHMACHER] 2025-05-08 12:50:49 INFO [NestApplication] Nest application successfully started"
+2025-05-08 12:50:58.938 | RK:  | [MOZART] 2025-05-08 12:50:58 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:50:58.938 | RK:  | [MOZART] 2025-05-08 12:50:58 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:50:58.939 | RK:  | [MOZART] 2025-05-08 12:50:58 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:50:58.947 | RK:  | [BEETHOVEN] 2025-05-08 12:50:58 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:50:58.947 | RK:  | [BEETHOVEN] 2025-05-08 12:50:58 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 24.
+
+2025-05-08 12:50:58.948 | RK:  | [BEETHOVEN] 2025-05-08 12:50:58 INFO  ErpOrderService: Bestellabwicklung mit ID 16af0b08-f1ff-4d49-8d91-c02de289504e im Repository gespeichert.
+
+2025-05-08 12:50:58.950 | RK:  | [BEETHOVEN] 2025-05-08 12:50:58 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: 16af0b08-f1ff-4d49-8d91-c02de289504e
+
+2025-05-08 12:50:58.952 | RK:  | [MOZART] 2025-05-08 12:50:58 INFO  BestellungService: Erstelle Bestellung mit Order ID: 16af0b08-f1ff-4d49-8d91-c02de289504e...
+
+2025-05-08 12:50:58.952 | RK:  | [MOZART] 2025-05-08 12:50:58 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 16af0b08-f1ff-4d49-8d91-c02de289504e...
+
+2025-05-08 12:50:58.953 | RK:  | [MOZART] 2025-05-08 12:50:58 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 16af0b08-f1ff-4d49-8d91-c02de289504e...
+
+2025-05-08 12:50:58.953 | RK:  | [MOZART] 2025-05-08 12:50:58 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 16af0b08-f1ff-4d49-8d91-c02de289504e...
+
+2025-05-08 12:50:58.955 | RK:  | [MOZART] 2025-05-08 12:50:58 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:50:58.945796300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:50:58.955 | RK:  | [MOZART] 2025-05-08 12:50:58 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:50:58.945796300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:50:58.961 | RK:  | "[SCHUHMACHER] 2025-05-08 12:50:58 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"16af0b08-f1ff-4d49-8d91-c02de289504e\",\"kundenId\":\"KundenID-456\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":59.9,\"status\":\"Processing\",\"email\":\"neukunde@beispiel.com\",\"adressZeichenkette\":\"Hauptstraße 5, 80331 München\"}"
+2025-05-08 12:50:58.962 | RK:  | "[SCHUHMACHER] 2025-05-08 12:50:58 DEBUG [ECommerceListener] New customer added with ID: KundenID-456"
+2025-05-08 12:50:58.962 | RK:  | "[SCHUHMACHER] 2025-05-08 12:50:58 DEBUG [ECommerceListener] New order 16af0b08-f1ff-4d49-8d91-c02de289504e added for customer KundenID-456. Initial status from DTO will be applied."
+2025-05-08 12:50:58.962 | RK:  | "[SCHUHMACHER] 2025-05-08 12:50:58 DEBUG [ECommerceListener] Bestellung 16af0b08-f1ff-4d49-8d91-c02de289504e status updated to 1"
+2025-05-08 12:50:58.962 | RK:  | "[SCHUHMACHER] 2025-05-08 12:50:58 DEBUG [ECommerceListener] Bestellung 16af0b08-f1ff-4d49-8d91-c02de289504e updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 59.9"
+2025-05-08 12:51:03.986 | RK:  | [MOZART] 2025-05-08 12:51:03 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:51:03.987 | RK:  | [MOZART] 2025-05-08 12:51:03 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:51:03.988 | RK:  | [MOZART] 2025-05-08 12:51:03 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:51:03.992 | RK:  | [BEETHOVEN] 2025-05-08 12:51:03 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:51:03.992 | RK:  | [BEETHOVEN] 2025-05-08 12:51:03 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 22.
+
+2025-05-08 12:51:03.993 | RK:  | [BEETHOVEN] 2025-05-08 12:51:03 INFO  ErpOrderService: Bestellabwicklung mit ID 0f76cfee-f2b5-4b09-b49b-9f7beb0a52e6 im Repository gespeichert.
+
+2025-05-08 12:51:03.995 | RK:  | [BEETHOVEN] 2025-05-08 12:51:03 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: 0f76cfee-f2b5-4b09-b49b-9f7beb0a52e6
+
+2025-05-08 12:51:03.996 | RK:  | [MOZART] 2025-05-08 12:51:03 INFO  BestellungService: Erstelle Bestellung mit Order ID: 0f76cfee-f2b5-4b09-b49b-9f7beb0a52e6...
+
+2025-05-08 12:51:03.997 | RK:  | [MOZART] 2025-05-08 12:51:03 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 0f76cfee-f2b5-4b09-b49b-9f7beb0a52e6...
+
+2025-05-08 12:51:03.998 | RK:  | [MOZART] 2025-05-08 12:51:03 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 0f76cfee-f2b5-4b09-b49b-9f7beb0a52e6...
+
+2025-05-08 12:51:03.999 | RK:  | [MOZART] 2025-05-08 12:51:03 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 0f76cfee-f2b5-4b09-b49b-9f7beb0a52e6...
+
+2025-05-08 12:51:04.000 | RK:  | [MOZART] 2025-05-08 12:51:03 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:51:03.990110500, lieferstatus=PROCESSING}...
+
+2025-05-08 12:51:04.001 | RK:  | [MOZART] 2025-05-08 12:51:03 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:51:03.990110500, lieferstatus=PROCESSING}...
+
+2025-05-08 12:51:04.004 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:04 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"0f76cfee-f2b5-4b09-b49b-9f7beb0a52e6\",\"kundenId\":\"KundenID-456\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":59.9,\"status\":\"Processing\",\"email\":\"neukunde@beispiel.com\",\"adressZeichenkette\":\"Hauptstraße 5, 80331 München\"}"
+2025-05-08 12:51:04.004 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:04 DEBUG [ECommerceListener] New order 0f76cfee-f2b5-4b09-b49b-9f7beb0a52e6 added for customer KundenID-456. Initial status from DTO will be applied."
+2025-05-08 12:51:04.005 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:04 DEBUG [ECommerceListener] Bestellung 0f76cfee-f2b5-4b09-b49b-9f7beb0a52e6 status updated to 1"
+2025-05-08 12:51:04.005 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:04 DEBUG [ECommerceListener] Bestellung 0f76cfee-f2b5-4b09-b49b-9f7beb0a52e6 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 59.9"
+2025-05-08 12:51:18.390 | RK:  | [MOZART] 2025-05-08 12:51:18 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:51:18.391 | RK:  | [MOZART] 2025-05-08 12:51:18 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:51:18.391 | RK:  | [MOZART] 2025-05-08 12:51:18 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:51:18.398 | RK:  | [BEETHOVEN] 2025-05-08 12:51:18 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:51:18.400 | RK:  | [BEETHOVEN] 2025-05-08 12:51:18 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 20.
+
+2025-05-08 12:51:18.401 | RK:  | [BEETHOVEN] 2025-05-08 12:51:18 INFO  ErpOrderService: Bestellabwicklung mit ID 845feef0-235a-4392-b091-601fe33524b3 im Repository gespeichert.
+
+2025-05-08 12:51:18.404 | RK:  | [BEETHOVEN] 2025-05-08 12:51:18 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: 845feef0-235a-4392-b091-601fe33524b3
+
+2025-05-08 12:51:18.406 | RK:  | [MOZART] 2025-05-08 12:51:18 INFO  BestellungService: Erstelle Bestellung mit Order ID: 845feef0-235a-4392-b091-601fe33524b3...
+
+2025-05-08 12:51:18.407 | RK:  | [MOZART] 2025-05-08 12:51:18 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 845feef0-235a-4392-b091-601fe33524b3...
+
+2025-05-08 12:51:18.408 | RK:  | [MOZART] 2025-05-08 12:51:18 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 845feef0-235a-4392-b091-601fe33524b3...
+
+2025-05-08 12:51:18.410 | RK:  | [MOZART] 2025-05-08 12:51:18 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 845feef0-235a-4392-b091-601fe33524b3...
+
+2025-05-08 12:51:18.414 | RK:  | [MOZART] 2025-05-08 12:51:18 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:51:18.395445300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:51:18.417 | RK:  | [MOZART] 2025-05-08 12:51:18 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:51:18.395445300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:51:18.419 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:18 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"845feef0-235a-4392-b091-601fe33524b3\",\"kundenId\":\"KundenID-456\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":59.9,\"status\":\"Processing\",\"email\":\"neukunde@beispiel.com\",\"adressZeichenkette\":\"Hauptstraße 5, 80331 München\"}"
+2025-05-08 12:51:18.419 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:18 DEBUG [ECommerceListener] New order 845feef0-235a-4392-b091-601fe33524b3 added for customer KundenID-456. Initial status from DTO will be applied."
+2025-05-08 12:51:18.419 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:18 DEBUG [ECommerceListener] Bestellung 845feef0-235a-4392-b091-601fe33524b3 status updated to 1"
+2025-05-08 12:51:18.420 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:18 DEBUG [ECommerceListener] Bestellung 845feef0-235a-4392-b091-601fe33524b3 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 59.9"
+2025-05-08 12:51:22.225 | RK:  | [MOZART] 2025-05-08 12:51:22 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:51:22.225 | RK:  | [MOZART] 2025-05-08 12:51:22 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:51:22.226 | RK:  | [MOZART] 2025-05-08 12:51:22 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:51:22.233 | RK:  | [BEETHOVEN] 2025-05-08 12:51:22 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:51:22.233 | RK:  | [BEETHOVEN] 2025-05-08 12:51:22 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 18.
+
+2025-05-08 12:51:22.234 | RK:  | [BEETHOVEN] 2025-05-08 12:51:22 INFO  ErpOrderService: Bestellabwicklung mit ID 2ec25766-22cb-42d7-ad9d-4a9adb42b882 im Repository gespeichert.
+
+2025-05-08 12:51:22.235 | RK:  | [BEETHOVEN] 2025-05-08 12:51:22 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: 2ec25766-22cb-42d7-ad9d-4a9adb42b882
+
+2025-05-08 12:51:22.236 | RK:  | [MOZART] 2025-05-08 12:51:22 INFO  BestellungService: Erstelle Bestellung mit Order ID: 2ec25766-22cb-42d7-ad9d-4a9adb42b882...
+
+2025-05-08 12:51:22.237 | RK:  | [MOZART] 2025-05-08 12:51:22 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 2ec25766-22cb-42d7-ad9d-4a9adb42b882...
+
+2025-05-08 12:51:22.238 | RK:  | [MOZART] 2025-05-08 12:51:22 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 2ec25766-22cb-42d7-ad9d-4a9adb42b882...
+
+2025-05-08 12:51:22.239 | RK:  | [MOZART] 2025-05-08 12:51:22 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 2ec25766-22cb-42d7-ad9d-4a9adb42b882...
+
+2025-05-08 12:51:22.240 | RK:  | [MOZART] 2025-05-08 12:51:22 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:51:22.231797700, lieferstatus=PROCESSING}...
+
+2025-05-08 12:51:22.242 | RK:  | [MOZART] 2025-05-08 12:51:22 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:51:22.231797700, lieferstatus=PROCESSING}...
+
+2025-05-08 12:51:22.243 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:22 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"2ec25766-22cb-42d7-ad9d-4a9adb42b882\",\"kundenId\":\"KundenID-456\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":59.9,\"status\":\"Processing\",\"email\":\"neukunde@beispiel.com\",\"adressZeichenkette\":\"Hauptstraße 5, 80331 München\"}"
+2025-05-08 12:51:22.244 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:22 DEBUG [ECommerceListener] New order 2ec25766-22cb-42d7-ad9d-4a9adb42b882 added for customer KundenID-456. Initial status from DTO will be applied."
+2025-05-08 12:51:22.244 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:22 DEBUG [ECommerceListener] Bestellung 2ec25766-22cb-42d7-ad9d-4a9adb42b882 status updated to 1"
+2025-05-08 12:51:22.244 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:22 DEBUG [ECommerceListener] Bestellung 2ec25766-22cb-42d7-ad9d-4a9adb42b882 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 59.9"
+2025-05-08 12:51:36.009 | RK:  | [MOZART] 2025-05-08 12:51:36 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:51:36.010 | RK:  | [MOZART] 2025-05-08 12:51:36 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:51:36.011 | RK:  | [MOZART] 2025-05-08 12:51:36 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:51:36.019 | RK:  | [BEETHOVEN] 2025-05-08 12:51:36 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:51:36.020 | RK:  | [BEETHOVEN] 2025-05-08 12:51:36 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 16.
+
+2025-05-08 12:51:36.021 | RK:  | [BEETHOVEN] 2025-05-08 12:51:36 INFO  ErpOrderService: Bestellabwicklung mit ID 6e82e1cc-96d6-4f9e-8a38-1b04d2706d28 im Repository gespeichert.
+
+2025-05-08 12:51:36.022 | RK:  | [BEETHOVEN] 2025-05-08 12:51:36 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: 6e82e1cc-96d6-4f9e-8a38-1b04d2706d28
+
+2025-05-08 12:51:36.024 | RK:  | [MOZART] 2025-05-08 12:51:36 INFO  BestellungService: Erstelle Bestellung mit Order ID: 6e82e1cc-96d6-4f9e-8a38-1b04d2706d28...
+
+2025-05-08 12:51:36.024 | RK:  | [MOZART] 2025-05-08 12:51:36 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: 6e82e1cc-96d6-4f9e-8a38-1b04d2706d28...
+
+2025-05-08 12:51:36.024 | RK:  | [MOZART] 2025-05-08 12:51:36 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: 6e82e1cc-96d6-4f9e-8a38-1b04d2706d28...
+
+2025-05-08 12:51:36.025 | RK:  | [MOZART] 2025-05-08 12:51:36 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: 6e82e1cc-96d6-4f9e-8a38-1b04d2706d28...
+
+2025-05-08 12:51:36.027 | RK:  | [MOZART] 2025-05-08 12:51:36 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:51:36.016540, lieferstatus=PROCESSING}...
+
+2025-05-08 12:51:36.027 | RK:  | [MOZART] 2025-05-08 12:51:36 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:51:36.016540, lieferstatus=PROCESSING}...
+
+2025-05-08 12:51:36.033 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:36 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"6e82e1cc-96d6-4f9e-8a38-1b04d2706d28\",\"kundenId\":\"KundenID-456\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":59.9,\"status\":\"Processing\",\"email\":\"neukunde@beispiel.com\",\"adressZeichenkette\":\"Hauptstraße 5, 80331 München\"}"
+2025-05-08 12:51:36.033 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:36 DEBUG [ECommerceListener] New order 6e82e1cc-96d6-4f9e-8a38-1b04d2706d28 added for customer KundenID-456. Initial status from DTO will be applied."
+2025-05-08 12:51:36.034 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:36 DEBUG [ECommerceListener] Bestellung 6e82e1cc-96d6-4f9e-8a38-1b04d2706d28 status updated to 1"
+2025-05-08 12:51:36.034 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:36 DEBUG [ECommerceListener] Bestellung 6e82e1cc-96d6-4f9e-8a38-1b04d2706d28 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 59.9"
+2025-05-08 12:51:38.114 | RK:  | [MOZART] 2025-05-08 12:51:38 INFO  BestellungController: starte postBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:51:38.119 | RK:  | [MOZART] 2025-05-08 12:51:38 INFO  BestellungService: Starte processBestellung() mit folgendem Objekt: NewBestellungRequestDto[kundenId=KundenID-456, email=neukunde@beispiel.com, adresse=Hauptstraße 5, 80331 München, produktId=PROD-MOCK-002, menge=2, zahlungsmethode=Kreditkarte]...
+
+2025-05-08 12:51:38.124 | RK:  | [MOZART] 2025-05-08 12:51:38 INFO  BestellungService: Produktbestand aktualisiert für Produkt ID: PROD-MOCK-002...
+
+2025-05-08 12:51:38.124 | RK:  | [BEETHOVEN] 2025-05-08 12:51:38 INFO  ErpOrderService: bestellungOrder aufgerufen für Produkt-ID PROD-MOCK-002...
+
+2025-05-08 12:51:38.128 | RK:  | [BEETHOVEN] 2025-05-08 12:51:38 INFO  ErpOrderService: Lagerbestand für Produkt PROD-MOCK-002 aktualisiert. Neuer Lagerbestand: 14.
+
+2025-05-08 12:51:38.131 | RK:  | [BEETHOVEN] 2025-05-08 12:51:38 INFO  ErpOrderService: Bestellabwicklung mit ID a346f218-ac0e-48dd-a09a-4e6a455a8ae5 im Repository gespeichert.
+
+2025-05-08 12:51:38.132 | RK:  | [BEETHOVEN] 2025-05-08 12:51:38 INFO  ErpOrderService: Bestellung für Produkt-ID PROD-MOCK-002 erfolgreich bearbeitet. Bestellabwicklungs-ID: a346f218-ac0e-48dd-a09a-4e6a455a8ae5
+
+2025-05-08 12:51:38.132 | RK:  | [MOZART] 2025-05-08 12:51:38 INFO  BestellungService: Erstelle Bestellung mit Order ID: a346f218-ac0e-48dd-a09a-4e6a455a8ae5...
+
+2025-05-08 12:51:38.133 | RK:  | [MOZART] 2025-05-08 12:51:38 INFO  BestellungService: Bestellung erfolgreich in das Repository eingefügt. Order ID: a346f218-ac0e-48dd-a09a-4e6a455a8ae5...
+
+2025-05-08 12:51:38.134 | RK:  | [MOZART] 2025-05-08 12:51:38 INFO  BestellungService: Erstelle BestellungDataSchuhmacher für Bestellung mit Order ID: a346f218-ac0e-48dd-a09a-4e6a455a8ae5...
+
+2025-05-08 12:51:38.136 | RK:  | [MOZART] 2025-05-08 12:51:38 INFO  BestellungService: BestellungDataSchuhmacher erfolgreich erstellt und an die CRM-Queue gesendet. Order ID: a346f218-ac0e-48dd-a09a-4e6a455a8ae5...
+
+2025-05-08 12:51:38.138 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:38 DEBUG [ECommerceListener] Received message from E-Commerce System: {\"bestellId\":\"a346f218-ac0e-48dd-a09a-4e6a455a8ae5\",\"kundenId\":\"KundenID-456\",\"bestelldatum\":[2025,5,8],\"gesamtbetrag\":59.9,\"status\":\"Processing\",\"email\":\"neukunde@beispiel.com\",\"adressZeichenkette\":\"Hauptstraße 5, 80331 München\"}"
+2025-05-08 12:51:38.138 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:38 DEBUG [ECommerceListener] New order a346f218-ac0e-48dd-a09a-4e6a455a8ae5 added for customer KundenID-456. Initial status from DTO will be applied."
+2025-05-08 12:51:38.139 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:38 DEBUG [ECommerceListener] Bestellung a346f218-ac0e-48dd-a09a-4e6a455a8ae5 status updated to 1"
+2025-05-08 12:51:38.139 | RK:  | "[SCHUHMACHER] 2025-05-08 12:51:38 DEBUG [ECommerceListener] Bestellung a346f218-ac0e-48dd-a09a-4e6a455a8ae5 updated with orderDate: 2025-05-07T22:00:00.000Z, totalAmount: 59.9"
+2025-05-08 12:51:38.141 | RK:  | [MOZART] 2025-05-08 12:51:38 INFO  BestellungService: Bestellung erfolgreich verarbeitet. Lieferinformationen: Lieferinformationen{lieferdatum=2025-05-11T12:51:38.121516300, lieferstatus=PROCESSING}...
+
+2025-05-08 12:51:38.142 | RK:  | [MOZART] 2025-05-08 12:51:38 INFO  BestellungController: Bestellung erfolgreich verarbeitet. Antwort: Lieferinformationen{lieferdatum=2025-05-11T12:51:38.121516300, lieferstatus=PROCESSING}...
+
