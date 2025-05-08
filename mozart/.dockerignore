@@ -1,0 +1,52 @@
+# Git-spezifische Dateien und Ordner
+.git
+.gitignore
+.gitattributes
+
+# IDE-spezifische Konfigurationen
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Build-Tool spezifische Dateien (Wrapper und lokale Caches)
+# Wenn Sie den Wrapper nicht innerhalb eines mehrstufigen Docker-Builds verwenden,
+# können diese normalerweise ignoriert werden.
+.mvn/
+mvnw
+mvnw.cmd
+
+.gradle/
+gradlew
+gradlew.bat
+
+# Lokale Build-Ausgaben, die nicht die finale JAR für das Image sind
+# (z.B. temporäre Dateien, Testberichte).
+# Das Haupt-JAR-Verzeichnis wie 'target' oder 'build/libs' NICHT hier auflisten,
+# wenn das Dockerfile daraus kopiert!
+target/classes/
+target/test-classes/
+target/surefire-reports/
+target/failsafe-reports/
+
+build/classes/
+build/tmp/
+build/reports/
+build/test-results/
+
+# Log-Dateien
+*.log
+
+# Betriebssystem-spezifische Dateien
+.DS_Store
+Thumbs.db
+
+# Lokale Konfigurationsdateien, die nicht ins Image sollen
+# (z.B. lokale .env Dateien, falls nicht anders gemanagt)
+# .env
+
+# Andere temporäre oder lokale Dateien
+*~
+*.swp

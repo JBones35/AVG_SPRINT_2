@@ -1,0 +1,9 @@
+.git
+.github
+.vscode
+node_modules
+dist
+npm-debug.log
+*.env
+.DS_Store
+# Fügen Sie hier weitere Dateien/Ordner hinzu, die nicht benötigt werden

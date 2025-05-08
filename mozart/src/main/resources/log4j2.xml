@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+ <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <RabbitMQ name="rabbitmq"
+                queueName="logging.exchange"
+                exchangeName="logging.exchange"
+                host="localhost"
+                port="5672"
+                username="guest"
+                password="guest">
+            <PatternLayout pattern="[MOZART] %d{yyyy-MM-dd HH:mm:ss} %-5level %msg%n"/>
+        </RabbitMQ>
+</Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>   
+            <AppenderRef ref="rabbitmq"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  spring-grpc-server:
+    build:
+      context: ..
+    container_name: kirschner.flaig.mozart-server
+    ports:
+      - "8089:8089"
+    networks:
+      - app-netzwerk
+    restart: unless-stopped
+    environment:
+      - spring.rabbitmq.host=rabbitmq
+      - spring.rabbitmq.port=5672
+
+networks:
+  app-netzwerk:
+    driver: bridge

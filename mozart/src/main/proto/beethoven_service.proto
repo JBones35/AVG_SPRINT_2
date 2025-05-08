@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+// Angepasste Java-spezifische Einstellungen für dein Projekt
+option java_package = "kirschner.flaig.mozart.grpc";
+option java_multiple_files = true;
+
+// Der gRPC-Service für das ERP-System zur Auftragsbearbeitung
+service ErpOrderService {
+  rpc BestellungOrder (BestellungRequest) returns (BestellungResponse);
+}
+
+message BestellungRequest {
+  string customer_id = 2;
+  string product_id = 3;
+  int32 quantity = 4;
+}
+
+// Die Antwort-Nachricht, die synchron vom ERP zurückgegeben wird.
+// Enthält das geplante Lieferdatum und den initialen Status.
+message BestellungResponse {
+    string orderId = 1;       // Die ID der Bestellung [cite: 20]
+    string deliveryDate = 2;    // Das geplante Lieferdatum (als String) [cite: 20]
+    string deliveryStatus = 3;  // Der initiale Lieferstatus [cite: 20]
+}

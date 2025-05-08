@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  nest-app:
+    build:
+      context: ..
+    container_name: kirschner.flaig.schuhmacher-server
+    ports:
+      - "3000:3000"
+    environment:
+      - RABBITMQ_URL=amqp://user:password@localhost:5672
+      - RABBITMQ_LOGS_EXCHANGE_NAME=logging.exchange
+    restart: unless-stopped

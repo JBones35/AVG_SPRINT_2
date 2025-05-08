@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  spring-grpc-server:
+    build:
+      context: ..
+    container_name: kirschner.flaig.beethoven-server
+    ports:
+      - "9090:9090"
+      - "8080:8080"
+    networks:
+      - app-netzwerk
+    restart: unless-stopped
+
+networks:
+  app-netzwerk:
+    driver: bridge

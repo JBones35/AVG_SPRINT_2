@@ -1,0 +1,49 @@
+# docker-compose.yml (Ausschnitt)
+services:
+  rabbitmq: # <-- SERVICE-NAME ist 'rabbitmq'
+    image: rabbitmq:3.13-management-alpine
+    container_name: mein-rabbitmq-server
+    hostname: rabbitmq-host # Interner Hostname des Containers
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=user
+      - RABBITMQ_DEFAULT_PASS=password
+    volumes:
+      - rabbitmq_daten:/var/lib/rabbitmq/
+    networks:
+      - app-netzwerk # Stellen Sie sicher, dass Ihr Python-Dienst auch in diesem Netzwerk ist
+    restart: unless-stopped
+    healthcheck:
+        test: ["CMD", "rabbitmqctl", "status"]
+        interval: 30s
+        timeout: 10s
+        retries: 5
+        start_period: 60s
+  
+  # Ihr Python-Dienst (der den Container kirschner.flaig.mueller erstellt)
+  mueller: # Der Name dieses Services kann variieren
+    build: ../../müller
+    container_name: kirschner.flaig.mueller
+    environment:
+      # WICHTIG: Hier den SERVICE-NAMEN von RabbitMQ verwenden!
+      - RABBITMQ_HOST=rabbitmq  # <-- ÄNDERN SIE DIES! Nicht 'rabbitmq-host'
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USER=user
+      - RABBITMQ_PASS=password
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - app-netzwerk
+    # ... restliche Konfiguration ...
+
+networks:
+  app-netzwerk:
+    driver: bridge
+
+volumes:
+  rabbitmq_daten:
+    driver: local
