@@ -5,7 +5,7 @@
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
         <RabbitMQ name="rabbitmq"
-                queueName="logging.exchange"
+                queueName="system-a.log.queue"
                 exchangeName="logging.exchange"
                 host="192.168.178.167"
                 port="5672"
