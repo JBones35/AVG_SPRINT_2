@@ -73,7 +73,7 @@ public class RabbitMQAppender extends AbstractAppender {
             this.kanal = this.verbindung.createChannel();
 
             this.kanal.exchangeDeclare(this.austauschName, "fanout", true);
-            this.kanal.queueDeclare(warteschlangenName, false, false, false, null);
+            this.kanal.queueDeclare(warteschlangenName, true, false, false, null);
             this.kanal.queueBind(warteschlangenName, this.austauschName, "");
 
         } catch (IOException | TimeoutException e) {
