@@ -1,4 +1,4 @@
-FROM eclipse-temurin:24-jdk-alpine
+FROM eclipse-temurin:21-jdk-alpine
 
 LABEL maintainer="Jonas Kirschner <kirschner.jonas@gmx.de>"
 LABEL description="Spring Boot Maven Server: kirschner.flaig.beethoven"
