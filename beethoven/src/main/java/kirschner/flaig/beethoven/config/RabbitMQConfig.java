@@ -3,6 +3,7 @@ package kirschner.flaig.beethoven.config;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;
+import org.springframework.amqp.core.FanoutExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -13,19 +14,16 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * Konfigurationsklasse für RabbitMQ-Beans im Beethoven-Service.
- * Definiert einen Exchange, eine Warteschlange für E-Commerce-Statusnachrichten,
- * ein Binding, einen JSON-Nachrichtenkonverter und ein {@link RabbitTemplate},
- * das diesen Konverter verwendet.
+ * Definiert Exchanges, Warteschlangen, Bindings, einen JSON-Nachrichtenkonverter
+ * und ein {@link RabbitTemplate}, das diesen Konverter verwendet.
  */
 @Configuration
 public class RabbitMQConfig {
 
     /**
      * Der Name des Exchanges für Nachrichten aus dem E-Commerce-System.
-     * An diesen Exchange werden Nachrichten gesendet, die dann per Routing Key
-     * an die entsprechenden Queues weitergeleitet werden.
      */
-    public static final String ECOMMERCE_EXCHANGE_NAME = "ecommerce.direct.exchange"; // Konsistent mit anderer Config
+    public static final String ECOMMERCE_EXCHANGE_NAME = "ecommerce.direct.exchange";
 
     /**
      * Der Name der RabbitMQ-Warteschlange für den Empfang von Statusnachrichten aus dem E-Commerce-System.
@@ -36,7 +34,19 @@ public class RabbitMQConfig {
      * Der Routing Key, um E-Commerce-Statusaktualisierungen an die
      * {@link #E_COMMERCE_NACHRICHTEN_WARTESCHLANGE} zu leiten.
      */
-    public static final String ECOMMERCE_STATUS_ROUTING_KEY = "ecommerce.status.routingkey"; // Konsistent mit anderer Config
+    public static final String ECOMMERCE_STATUS_ROUTING_KEY = "ecommerce.status.routingkey";
+
+    /**
+     * Der Name des Fanout-Exchanges für Logging-Nachrichten.
+     * Nachrichten, die an diesen Exchange gesendet werden, werden an alle gebundenen Queues verteilt.
+     */
+    public static final String LOGGING_EXCHANGE_NAME = "logging.exchange"; // Angepasst auf "logging"
+
+    /**
+     * Der Name der RabbitMQ-Warteschlange für den Empfang von Logging-Nachrichten.
+     * Diese Warteschlange hat denselben Namen wie der Exchange, an den sie gebunden ist.
+     */
+    public static final String LOGGING_QUEUE_NAME = "logging.exchange"; // Warteschlange heißt jetzt wie der Exchange
 
     /**
      * Erstellt und konfiguriert einen {@link MessageConverter}, der Nachrichten
@@ -51,8 +61,6 @@ public class RabbitMQConfig {
 
     /**
      * Definiert den Direct Exchange für das E-Commerce-System.
-     * Nachrichten, die an diesen Exchange mit dem passenden Routing Key gesendet werden,
-     * werden an die gebundene Queue weitergeleitet.
      * @return Eine Instanz von {@link DirectExchange}.
      */
     @Bean
@@ -62,24 +70,15 @@ public class RabbitMQConfig {
 
     /**
      * Definiert und erstellt die RabbitMQ-Warteschlange für E-Commerce-Nachrichten.
-     * Die Warteschlange ist als durebelfähig (persistent) konfiguriert,
-     * d.h., Nachrichten überleben einen Neustart des Brokers.
-     *
-     * @return Eine Instanz von {@link Queue}, die die E-Commerce-Warteschlange repräsentiert.
+     * @return Eine Instanz von {@link Queue}.
      */
     @Bean
     public Queue eCommerceWarteschlange() {
-        // Parameter: name, durable, exclusive, autoDelete
         return new Queue(E_COMMERCE_NACHRICHTEN_WARTESCHLANGE, true, false, false);
     }
 
     /**
-     * Erstellt ein Binding zwischen der E-Commerce-Warteschlange und dem E-Commerce-Exchange
-     * unter Verwendung des definierten E-Commerce-Status-Routing-Keys.
-     * Dies stellt sicher, dass Nachrichten, die an den {@link #ECOMMERCE_EXCHANGE_NAME}
-     * mit dem Routing Key {@link #ECOMMERCE_STATUS_ROUTING_KEY} gesendet werden,
-     * an die {@link #eCommerceWarteschlange()} geleitet werden.
-     *
+     * Erstellt ein Binding zwischen der E-Commerce-Warteschlange und dem E-Commerce-Exchange.
      * @param eCommerceWarteschlange Die zu bindende E-Commerce-Warteschlange.
      * @param ecommerceExchange      Der zu bindende E-Commerce-Exchange.
      * @return Ein {@link Binding}-Objekt.
@@ -91,13 +90,44 @@ public class RabbitMQConfig {
                 .with(ECOMMERCE_STATUS_ROUTING_KEY);
     }
 
+    // --- Logging Fanout Exchange und Queue Konfiguration ---
+
+    /**
+     * Definiert den Fanout Exchange für Logging-Zwecke.
+     * @return Eine Instanz von {@link FanoutExchange}.
+     */
+    @Bean
+    public FanoutExchange loggingFanoutExchange() {
+        return new FanoutExchange(LOGGING_EXCHANGE_NAME); // Verwendet den angepassten Exchange-Namen
+    }
+
+    /**
+     * Definiert und erstellt die RabbitMQ-Warteschlange für Logging-Nachrichten.
+     * Der Name der Warteschlange ist identisch mit dem des Logging-Exchanges.
+     * @return Eine Instanz von {@link Queue}.
+     */
+    @Bean
+    public Queue loggingWarteschlange() {
+        return new Queue(LOGGING_QUEUE_NAME, true, false, false); // Verwendet den angepassten Queue-Namen
+    }
+
+    /**
+     * Erstellt ein Binding zwischen der Logging-Warteschlange und dem Logging-Fanout-Exchange.
+     * @param loggingWarteschlange Die zu bindende Logging-Warteschlange (Name: "logging.exchange").
+     * @param loggingFanoutExchange Der zu bindende Logging-Fanout-Exchange (Name: "logging.exchange").
+     * @return Ein {@link Binding}-Objekt.
+     */
+    @Bean
+    public Binding loggingBinding(Queue loggingWarteschlange, FanoutExchange loggingFanoutExchange) {
+        return BindingBuilder.bind(loggingWarteschlange)
+                .to(loggingFanoutExchange);
+    }
+
+    // --- RabbitTemplate Konfiguration ---
+
     /**
      * Erstellt und konfiguriert ein {@link RabbitTemplate} für die Interaktion mit RabbitMQ.
-     * Das Template wird so konfiguriert, dass es den {@link #jsonNachrichtenKonverter()}
-     * für die Nachrichtenserialisierung und -deserialisierung verwendet.
-     *
-     * @param verbindungsFabrik Die {@link ConnectionFactory}, die für die Erstellung
-     * der RabbitMQ-Verbindung verwendet wird.
+     * @param verbindungsFabrik Die {@link ConnectionFactory}.
      * @return Eine konfigurierte Instanz von {@link RabbitTemplate}.
      */
     @Bean
