@@ -54,6 +54,7 @@ public class BeethovenStatusService {
      */
     public void sendeStatusAktualisierung(String bestellId, String status) throws IllegalArgumentException {
         LOGGER.info("Sende Statusaktualisierung für Bestell-ID: {} mit Status: {}", bestellId, status);
+        rabbitTemplate.convertAndSend(RabbitMQConfig.LOGGING_EXCHANGE_NAME, "Hello");
         if (!validiereStatus(status)) {
             LOGGER.error("Ungültiger Status: {}. Statusaktualisierung nicht gesendet.", status);
             throw new IllegalArgumentException("Ungültiger Status: " + status);

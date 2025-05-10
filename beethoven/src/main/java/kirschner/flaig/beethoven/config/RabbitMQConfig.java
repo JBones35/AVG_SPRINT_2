@@ -46,7 +46,7 @@ public class RabbitMQConfig {
      * Der Name der RabbitMQ-Warteschlange für den Empfang von Logging-Nachrichten.
      * Diese Warteschlange hat denselben Namen wie der Exchange, an den sie gebunden ist.
      */
-    public static final String LOGGING_QUEUE_NAME = "logging.exchange"; // Warteschlange heißt jetzt wie der Exchange
+    public static final String LOGGING_QUEUE_NAME = "system-a.log.queue"; // Warteschlange heißt jetzt wie der Exchange
 
     /**
      * Erstellt und konfiguriert einen {@link MessageConverter}, der Nachrichten
@@ -90,37 +90,48 @@ public class RabbitMQConfig {
                 .with(ECOMMERCE_STATUS_ROUTING_KEY);
     }
 
-    // --- Logging Fanout Exchange und Queue Konfiguration ---
-
-    /**
-     * Definiert den Fanout Exchange für Logging-Zwecke.
-     * @return Eine Instanz von {@link FanoutExchange}.
+        /**
+     * Definiert und deklariert einen Fanout-Exchange für Logging-Zwecke.
+     * Ein Fanout-Exchange leitet Nachrichten an alle Queues weiter, die an ihn gebunden sind,
+     * ohne den Routing-Key zu berücksichtigen.
+     *
+     * @return Ein FanoutExchange-Bean.
      */
     @Bean
-    public FanoutExchange loggingFanoutExchange() {
-        return new FanoutExchange(LOGGING_EXCHANGE_NAME); // Verwendet den angepassten Exchange-Namen
+    public FanoutExchange loggingExchange() {
+        // Der Exchange wird beim Start der Anwendung auf dem RabbitMQ-Broker erstellt,
+        // falls er noch nicht existiert.
+        // Parameter: name, durable, autoDelete
+        return new FanoutExchange(LOGGING_QUEUE_NAME, true, false);
     }
 
     /**
-     * Definiert und erstellt die RabbitMQ-Warteschlange für Logging-Nachrichten.
-     * Der Name der Warteschlange ist identisch mit dem des Logging-Exchanges.
-     * @return Eine Instanz von {@link Queue}.
+     * Definiert und deklariert eine dauerhafte Queue für Log-Nachrichten.
+     * Dauerhafte Queues überleben einen Neustart des RabbitMQ-Brokers.
+     *
+     * @return Ein Queue-Bean.
      */
     @Bean
-    public Queue loggingWarteschlange() {
-        return new Queue(LOGGING_QUEUE_NAME, true, false, false); // Verwendet den angepassten Queue-Namen
+    public Queue logQueue() {
+        // Parameter: name, durable, exclusive, autoDelete
+        // durable: true -> Queue überlebt Broker-Neustart
+        // exclusive: false -> Queue kann von mehreren Verbindungen genutzt werden
+        // autoDelete: false -> Queue wird nicht gelöscht, wenn der letzte Consumer die Verbindung trennt
+        return new Queue(LOGGING_QUEUE_NAME, true, false, false);
     }
 
     /**
-     * Erstellt ein Binding zwischen der Logging-Warteschlange und dem Logging-Fanout-Exchange.
-     * @param loggingWarteschlange Die zu bindende Logging-Warteschlange (Name: "logging.exchange").
-     * @param loggingFanoutExchange Der zu bindende Logging-Fanout-Exchange (Name: "logging.exchange").
-     * @return Ein {@link Binding}-Objekt.
+     * Definiert ein Binding zwischen der logQueue und dem loggingExchange.
+     * Alle Nachrichten, die an den loggingExchange (Fanout) gesendet werden,
+     * werden an die logQueue weitergeleitet.
+     *
+     * @param logQueue Die zu bindende Queue.
+     * @param loggingExchange Der zu bindende Exchange.
+     * @return Ein Binding-Bean.
      */
     @Bean
-    public Binding loggingBinding(Queue loggingWarteschlange, FanoutExchange loggingFanoutExchange) {
-        return BindingBuilder.bind(loggingWarteschlange)
-                .to(loggingFanoutExchange);
+    public Binding logBinding(Queue logQueue, FanoutExchange loggingExchange) {
+        return BindingBuilder.bind(logQueue).to(loggingExchange);
     }
 
     // --- RabbitTemplate Konfiguration ---
