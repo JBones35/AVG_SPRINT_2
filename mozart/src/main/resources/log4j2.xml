@@ -7,7 +7,7 @@
         <RabbitMQ name="rabbitmq"
                 queueName="logging.exchange"
                 exchangeName="logging.exchange"
-                host="localhost"
+                host="192.168.178.167"
                 port="5672"
                 username="guest"
                 password="guest">
