@@ -4,7 +4,7 @@ import os
 import time
 from datetime import datetime # War im Original-Code oben nicht importiert
 
-RABBITMQ_HOST = os.getenv('RABBITMQ_HOST', 'localhost')
+RABBITMQ_HOST = os.getenv('RABBITMQ_HOST', '192.168.178.167')
 RABBITMQ_PORT = int(os.getenv('RABBITMQ_PORT', 5672))
 
 RABBITMQ_USER = os.getenv('RABBITMQ_USER', 'guest')
